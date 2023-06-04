@@ -13,6 +13,21 @@ const Games = () => {
       </div>
         <div class="flex justify-space-between items-center justify-center w-full">
 
+        <Link href="/games/goime500">
+          <div className='m-3 game-shadow flex-1 flex justify-start gap-3 cursor-pointer hover:scale-105 transition-all ease-out shadow-md rounded-xl overflow-hidden'>
+            <div className='flex mt-32 p-2 b-0 z-10 absolute'>
+              <p className='text-2xl text-dywhite drop-shadow-2xl'>Goime 500</p>
+            </div>
+            <Image 
+                src={'/assets/images/goime500.png'} 
+                width={400} 
+                height={500} 
+                className='z-0 game-shadow'
+                style={{boxShadow: 'inset 88px -28px 155px 13px rgba(0, 0, 0, 0.63)'}}
+            />
+          </div>
+        </Link>
+
         <Link href="/games/merge">
           <div className='m-3 game-shadow flex-1 flex justify-start gap-3 cursor-pointer hover:scale-105 transition-all ease-out shadow-md rounded-xl overflow-hidden'>
             <div className='flex mt-32 p-2 b-0 z-10 absolute'>

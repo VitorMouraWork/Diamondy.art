@@ -16,7 +16,7 @@ const Merge = () => {
 
         <h1 className="flex w-full text-2xl my-3 self-center items-center justify-center">Merge</h1>
       <div className={'rounded-lg flex w-full self-center items-center justify-center'}>
-      <iframe className="rounded-lg " src="/public/games/Merge/index.html" width="1220" height="705" />
+      <iframe className="rounded-lg " src="https://cdm4-merge.netlify.app" width="1220" height="705" />
     </div>
     <div className='bggames opacity-70'/>
     </>
