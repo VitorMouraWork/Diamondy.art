@@ -1,0 +1,166 @@
+@import url('https://fonts.cdnfonts.com/css/made-outer-sans-alt?styles=51353,51351,51362');
+
+:root{
+    --dycharcoal: #435058;
+    --dyblue: #698DF7;
+    --dybluebright: #ADC1FA;
+    --dycultured: #F1F2EE; 
+    --dypink: #F1617D;
+    --dypinkbright: #F7A9B8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    color: var(--dycharcoal);
+    font-family: 'MADE Outer Sans', sans-serif;
+}
+
+body{
+    background-color: var(--dycultured);
+}
+
+.bghome{
+    background-image: url("/assets/images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+.bggames{
+    background-image: url("/assets/images/mineirao.png");
+    background-repeat: no-repeat;
+    opacity: 50;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.newsflash-text{
+    transform: translateX(100vw);
+    animation: my-animation 15s linear infinite;
+}
+@keyframes my-animation {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+.dyblue-filter:hover{
+    filter: invert(50%) sepia(83%) saturate(1735%) hue-rotate(203deg) brightness(100%) contrast(94%);
+}
+
+.nav{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vh 10vw 0;
+    color: var(--dycharcoal);
+    transition: all ease-out 0.2s;
+}
+    .nav a{
+        margin-inline: 3rem;
+    }
+    .nav p{
+        transition: all ease-out 0.1s;
+    }
+    .nav p:hover{
+        color: var(--dyblue);
+    }
+
+.newsflash{
+    z-index: 3;
+    position: fixed;
+    bottom: 0;
+    width: 98.2vw;
+    color: var(--dycharcoal);
+    padding: 5px;
+    background-color: #698DF750;
+    overflow: hidden;
+    display: flex;
+    pointer-events: none;
+}
+.newsflash-text{
+  transform: translateX(100vw);
+  animation: my-animation 15s linear infinite;
+}
+
+.dropdown-session{
+    position: relative;
+}
+.dropdown-items{
+    position: absolute;
+    width: max-content;
+    left: 1.5vw;
+    top: calc(100% + .25rem);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+/* .dropdown-session.active > #btn + .dropdown-menu{
+   opacity: 1; 
+   transform: translateY(0);
+   pointer-events: auto;
+}
+
+#btn{
+    width: 16px;
+    height: 25px;
+    background-image: url(/media/arrow.svg);
+    cursor: pointer;
+    transform: rotate(0);
+    transition: transform 150ms ease-out;
+}
+.dropdown-session.active > #btn{
+    transform: rotate(90deg);
+} */
+.dropdown-items li{
+    transition: transform 150ms ease-in-out
+}
+.dropdown-items li:hover{
+    transform: translateX(5px);
+}
+
+@keyframes my-animation {
+    from {
+      transform: translateX(100vw);
+    }
+    to {
+      transform: translateX(-100vw);
+    }
+}
+
+.game-shadow {
+    box-shadow: inset 88px -28px 155px 13px rgba(0, 0, 0, 0.63);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+    background: url(/assets/images/fishclicker.png);
+}
+
+/* Tailwind Styles */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+.dropdown {
+    @apply absolute top-full p-5 py-2 rounded-lg bg-white flex flex-col gap-2 justify-end items-end;
+}
+
+
+
+  
