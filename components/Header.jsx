@@ -28,7 +28,7 @@ const Header = () => {
                 {toggleTopdown && (
                     <div className="dropdown absolute left-8 mt-1 bg-white text-dyblack rounded-lg shadow-lg ease-in transition-opacity transition-transform">
                         <Link
-                            href={'/'}
+                            href={'/otom'}
                             className="block px-1 py-1 transition duration-200 ease-out hover:text-dyblue"
                             onClick={() => setToggleDropdown(false)}
                         >
