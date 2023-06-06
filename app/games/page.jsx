@@ -15,7 +15,7 @@ const Games = () => {
 
         <Link href="/games/goime500">
           <div className='m-3 game-shadow flex-1 flex justify-start gap-3 cursor-pointer hover:scale-105 transition-all ease-out shadow-md rounded-xl overflow-hidden'>
-            <div className='flex mt-32 p-2 b-0 z-10 absolute'>
+            <div className='flex p-2 bottom-0 z-10 absolute'>
               <p className='text-2xl text-dywhite drop-shadow-2xl'>Goime 500</p>
             </div>
             <Image 
@@ -30,7 +30,7 @@ const Games = () => {
 
         <Link href="/games/merge">
           <div className='m-3 game-shadow flex-1 flex justify-start gap-3 cursor-pointer hover:scale-105 transition-all ease-out shadow-md rounded-xl overflow-hidden'>
-            <div className='flex mt-32 p-2 b-0 z-10 absolute'>
+            <div className='flex p-2 bottom-0 z-10 absolute'>
               <p className='text-2xl text-dywhite drop-shadow-2xl'>Merge</p>
             </div>
             <Image 
@@ -45,7 +45,7 @@ const Games = () => {
 
         <Link href="https://fishclicker.netlify.app">
           <div className='m-3 game-shadow flex-1 flex justify-start gap-3 cursor-pointer hover:scale-105 transition-all ease-out shadow-md rounded-xl overflow-hidden'>
-            <div className='flex mt-32 p-2 b-0 z-10 absolute'>
+            <div className='flex p-2 bottom-0 z-10 absolute'>
               <p className='text-2xl text-dywhite drop-shadow-2xl'>Fish Clicker</p>
             </div>
             <Image 

@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/made-outer-sans-alt?styles=51353,51351,51362');
+@import url('https://fonts.cdnfonts.com/css/the-bold-font');
 
 :root{
     --dycharcoal: #435058;
@@ -148,6 +149,12 @@ body{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 14px;
     background: url(/assets/images/fishclicker.png);
+}
+
+/* otom */
+
+.otomtxt {
+    font-family: 'The Bold Font', sans-serif;
 }
 
 /* Tailwind Styles */

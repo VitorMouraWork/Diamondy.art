@@ -7,13 +7,15 @@ import '../../styles/globals.css'
 const Portfolio = () => {
   return (
     <>
-    <section className="w-full z-10 mt-8 px-40">
-      <div className='flex'>
+    <section className="w-full z-10 h-full px-30">
+      <div className='flex fixed z-10 ml-40 mt-8'>
         <h1 translate="no" className="text-dyblack text-7xl">Portfolio</h1><Image className={"mx-3"} src="/assets/icons/arrow.svg" width={30} height={30}/>
-      </div>
-        <div class="flex justify-space-between items-center justify-center w-full">
-        
-        </div>
+      {/* </div>
+        <div class="flex flex-row-reverse h-full z-0 p-5 bg-dyblackw-full">
+          <div className='w-2/5 right-5 bg-dyblue'>
+            <Image src="/assets/icons/arrow.svg" width={30} height={30}/>
+          </div>*/}
+        </div> 
       </section>
       <div className='bggames'/>
     </>
