@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
     <section className="w-full z-10 mt-6 px-40">
-      <h1 translate="no" className="text-dyblue text-7xl">Diamondy.art</h1>
+      <h1 translate="no" className="text-dyblue text-7xl textAppear animate-textAppear">Diamondy.art</h1>
       <div class="about flex mt-3">
 
         <div class="dropdown-session">
