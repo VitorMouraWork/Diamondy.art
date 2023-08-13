@@ -11,7 +11,8 @@ const Portfolio = () => {
   const [gridItems, setGridItems] = useState([]);
 
   const portfolioItems = [
-    { id: 1, category: 'gamedev', imageSrc: '/assets/images/fishclicker2.png', title: "Fish Clicker", date: "2022", href: 'https://fishclicker.netlify.app/' },
+
+    { id: 1, category: 'art', imageSrc: '/assets/images/mpe.png', title: "Mass Production Eva", date: "2023", href: 'https://twitter.com/Diamondyeet/status/1690849947061493760' },
     { id: 2, category: 'art', imageSrc: '/assets/images/boygenius.png', title: "", date: "2023", href: 'https://twitter.com/DiamonDeezNuts/status/1654714492498976768/photo/1' },
     { id: 3, category: 'art', imageSrc: '/assets/images/eva.jfif', title: "Eva Unit 02", date: "2023", href: 'https://twitter.com/Diamondyeet/status/1633880383698931713' },
     { id: 4, category: 'design', imageSrc: '/assets/images/Screenshot_1.png', title: "emojis", date: "2022", href: 'https://www.behance.net/gallery/144053481/Diamondy-Brand-Identity' },
@@ -28,6 +29,8 @@ const Portfolio = () => {
     { id: 15, category: 'art', imageSrc: '/assets/images/l4d.jpg', title: "Left 4 Dead", date: "2022", href: 'https://twitter.com/Diamondyeet' },
     { id: 16, category: 'art', imageSrc: '/assets/images/kold.jpg', title: "Kold", date: "2023", href: 'https://twitter.com/Diamondyeet' },
     { id: 17, category: 'gamedev', imageSrc: '/assets/images/merge.png', title: "CDM4: Merge", date: "2023", href: '/games/merge' },
+    { id: 18, category: 'art', imageSrc: '/assets/images/merge.png', title: "CDM4: Merge", date: "2023", href: '/games/merge' },
+    { id: 19, category: 'gamedev', imageSrc: '/assets/images/fishclicker2.png', title: "Fish Clicker", date: "2022", href: 'https://fishclicker.netlify.app/' },
 
     // Add more portfolio items as needed
   ];
