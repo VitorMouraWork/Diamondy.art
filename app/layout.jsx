@@ -2,6 +2,7 @@ import Newsflash from '@/components/Newsflash';
 import '../styles/globals.css'
 import Header from '/components/Header';
 import Head from 'next/head';
+import Mobile from '/components/Mobile';
 
 export const metadata = {
   title: 'Diamondy.art',
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body><Header/>{children}<Newsflash/></body>
+      <body><Header/><Mobile/>{children}<Newsflash/></body>
     </html>
   )
 }

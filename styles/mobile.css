@@ -1,0 +1,99 @@
+:root {
+    --background-rgb: 29 30 34;
+    
+    --blue-rgb: 33 150 243;
+    --primary-rgb: #21255A;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#phone {
+    position: fixed;
+    left: 15%;
+    transform: translateX(-50%);
+    width: 324px;
+    height: 609px;
+    aspect-ratio: 0.29 1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.5s ease-in-out;
+    z-index: 990;
+}
+
+.phone {
+    background-image: url(../public/assets/images/phone/phone.png);
+}
+
+.phoneScreen {
+    background: linear-gradient(
+        #151A39,
+        #151A39 3px,
+        #21255A 3px,
+        #21255A 9px
+  );
+  background-size: 100% 12px;
+  animation: pan-overlay 20s infinite linear;
+}
+
+@keyframes pan-overlay {
+    from {
+      background-position: 0% 0%;
+    }
+    
+    to {
+      background-position: 0% 100%;
+    }
+  }
+
+.hidden {
+    bottom: -2000px;
+}
+
+.header {
+    background-image: url(../public/assets/images/phone/header.png);
+    background-size: cover;
+    width: 300px;
+    height: 44px;
+}
+
+.map {
+    background-image: url(../public/assets/images/phone/map.png);
+    background-size: cover;
+    width: 300px;
+    height: 154px;
+}
+
+.details {
+    background-image: url(../public/assets/images/phone/details.png);
+    background-size: cover;
+    width: 291px;
+    height: 88px;
+    margin-top: -40px;
+}
+
+.menuButtons {
+    padding: 0 60px;
+    
+}
+
+.selected {
+    background-image: url(../public/assets/images/phone/selected.png);
+    background-size: cover;
+    width: 261px;
+    height: 53px;
+    margin-top: 306px;
+    position: absolute;
+    z-index: 0;
+    right: 20px;
+}
+
+.menuBtn {
+    text-align: left;
+    z-index: 1;
+}
