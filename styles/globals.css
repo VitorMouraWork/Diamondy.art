@@ -29,9 +29,6 @@ body{
     background-color: var(--dycultured);
 }
 
-body{
-    overflow: hidden;
-}
 
 .bghome{
     background-image: url("/assets/images/bg.png");
