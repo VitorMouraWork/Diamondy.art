@@ -12,6 +12,7 @@ const Portfolio = () => {
 
   const portfolioItems = [
 
+    { id: 20, category: 'art', imageSrc: '/assets/images/case.png', title: "Case", date: "2023", href: 'https://twitter.com/DiamonDeezNuts/status/1708994239546143023/photo/1' },
     { id: 19, category: 'design', imageSrc: '/assets/images/gamr.png', title: "Gamr Video Editor", date: "2022", href: 'https://www.behance.net/gallery/177600505/Gamr-software-Design' },
     { id: 18, category: 'art', imageSrc: '/assets/images/mpe.png', title: "Mass Production Eva", date: "2023", href: 'https://twitter.com/Diamondyeet/status/1690849947061493760' },
     { id: 17, category: 'art', imageSrc: '/assets/images/boygenius.png', title: "", date: "2023", href: 'https://twitter.com/DiamonDeezNuts/status/1654714492498976768/photo/1' },
@@ -31,8 +32,6 @@ const Portfolio = () => {
     { id: 3, category: 'art', imageSrc: '/assets/images/kold.jpg', title: "Kold", date: "2023", href: 'https://twitter.com/Diamondyeet' },
     { id: 2, category: 'gamedev', imageSrc: '/assets/images/merge.png', title: "CDM4: Merge", date: "2023", href: '/games/merge' },
     { id: 1, category: 'gamedev', imageSrc: '/assets/images/fishclicker2.png', title: "Fish Clicker", date: "2022", href: 'https://fishclicker.netlify.app/' },
-
-    // Add more portfolio items as needed
   ];
 
   const filterItems = (category) => {
