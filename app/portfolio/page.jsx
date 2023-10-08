@@ -33,13 +33,15 @@ const Portfolio = () => {
     { id: 2, category: 'gamedev', imageSrc: '/assets/images/merge.png', title: "CDM4: Merge", date: "2023", href: '/games/merge' },
     { id: 1, category: 'gamedev', imageSrc: '/assets/images/fishclicker2.png', title: "Fish Clicker", date: "2022", href: 'https://fishclicker.netlify.app/' },
   ];
+  
+  const shuffledPortfolioItems = [...portfolioItems].sort(() => Math.random() - 0.5);
 
   const filterItems = (category) => {
     setSelectedCategory(category);
   };
 
   useEffect(() => {
-    const filteredItems = portfolioItems.filter(
+    const filteredItems = shuffledPortfolioItems.filter(
       (item) => selectedCategory === 'all' || selectedCategory === item.category
     );
     setGridItems(filteredItems);
