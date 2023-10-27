@@ -12,12 +12,14 @@ const Portfolio = () => {
 
   const portfolioItems = [
 
-    { id: 20, category: 'art', imageSrc: '/assets/images/case.png', title: "Case", date: "2023", href: 'https://twitter.com/DiamonDeezNuts/status/1708994239546143023/photo/1' },
-    { id: 19, category: 'design', imageSrc: '/assets/images/gamr.png', title: "Gamr Video Editor", date: "2022", href: 'https://www.behance.net/gallery/177600505/Gamr-software-Design' },
-    { id: 18, category: 'art', imageSrc: '/assets/images/mpe.png', title: "Mass Production Eva", date: "2023", href: 'https://twitter.com/Diamondyeet/status/1690849947061493760' },
-    { id: 17, category: 'art', imageSrc: '/assets/images/boygenius.png', title: "", date: "2023", href: 'https://twitter.com/DiamonDeezNuts/status/1654714492498976768/photo/1' },
-    { id: 16, category: 'art', imageSrc: '/assets/images/eva.jfif', title: "Eva Unit 02", date: "2023", href: 'https://twitter.com/Diamondyeet/status/1633880383698931713' },
-    { id: 15, category: 'design', imageSrc: '/assets/images/Screenshot_1.png', title: "emojis", date: "2022", href: 'https://www.behance.net/gallery/144053481/Diamondy-Brand-Identity' },
+    { id: 22, category: 'design', imageSrc: '/assets/images/logofolio.png', title: "", date: "2023", href: 'https://www.behance.net/gallery/183263025/Logos-Marks-Vol-01' },
+    { id: 21, category: 'art', imageSrc: '/assets/images/case.png', title: "Case", date: "2023", href: 'https://twitter.com/DiamonDeezNuts/status/1708994239546143023/photo/1' },
+    { id: 20, category: 'design', imageSrc: '/assets/images/gamr.png', title: "Gamr Video Editor", date: "2022", href: 'https://www.behance.net/gallery/177600505/Gamr-software-Design' },
+    { id: 19, category: 'art', imageSrc: '/assets/images/mpe.png', title: "Mass Production Eva", date: "2023", href: 'https://twitter.com/Diamondyeet/status/1690849947061493760' },
+    { id: 18, category: 'art', imageSrc: '/assets/images/boygenius.png', title: "", date: "2023", href: 'https://twitter.com/DiamonDeezNuts/status/1654714492498976768/photo/1' },
+    { id: 17, category: 'art', imageSrc: '/assets/images/eva.jfif', title: "Eva Unit 02", date: "2023", href: 'https://twitter.com/Diamondyeet/status/1633880383698931713' },
+    { id: 16, category: 'design', imageSrc: '/assets/images/Screenshot_1.png', title: "emojis", date: "2022", href: 'https://www.behance.net/gallery/144053481/Diamondy-Brand-Identity' },
+    { id: 15, category: 'design', imageSrc: '/assets/images/topic.png', title: "Topic.", date: "2023", href: 'https://youtu.be/iAQ6S8NLqkU' },
     { id: 14, category: 'design', imageSrc: '/assets/images/brand.png', title: "Diamondy Brand Identity", date: "2022", href: 'https://www.behance.net/gallery/144053481/Diamondy-Brand-Identity' },
     { id: 13, category: 'art', imageSrc: '/assets/images/dom.jpg', title: "DOM", date: "2022", href: 'https://twitter.com/Diamondyeet' },
     { id: 12, category: 'gamedev', imageSrc: '/assets/images/goime500.png', title: "Goime 500 Remake", date: "2021", href: '/games/goime500' },
