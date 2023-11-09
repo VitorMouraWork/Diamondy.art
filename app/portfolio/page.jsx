@@ -12,6 +12,7 @@ const Portfolio = () => {
 
   const portfolioItems = [
 
+    { id: 23, category: 'web', imageSrc: '/assets/images/gamr page.png', title: "Gamr landing page", date: "2023", href: 'https://www.behance.net/gallery/184216955/Gamr-Landing-page-Concept' },
     { id: 22, category: 'design', imageSrc: '/assets/images/logofolio.png', title: "", date: "2023", href: 'https://www.behance.net/gallery/183263025/Logos-Marks-Vol-01' },
     { id: 21, category: 'art', imageSrc: '/assets/images/case.png', title: "Case", date: "2023", href: 'https://twitter.com/DiamonDeezNuts/status/1708994239546143023/photo/1' },
     { id: 20, category: 'design', imageSrc: '/assets/images/gamr.png', title: "Gamr Video Editor", date: "2022", href: 'https://www.behance.net/gallery/177600505/Gamr-software-Design' },

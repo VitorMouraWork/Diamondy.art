@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Time from './time';
 import '../styles/mobile.css';
-import useSound from 'use-sound';
+import { useSound } from 'use-sound';
 
 // Reusable component for delayed rendering and hiding of menu buttons
 const StateComponent = ({ iconSrc, title }) => {
@@ -40,6 +40,10 @@ const StateComponent = ({ iconSrc, title }) => {
 
 const MessagesState = () => {
   const messages = [
+    {
+      title: '09/11/2023 Update',
+      content: 'yeah, im still trying to figure out how to make the music work...',
+    },
     {
       title: '09/09/2023 Update',
       content: 'hey there! looks like you found the phone! this is the only feature added in this update.',
@@ -81,6 +85,9 @@ const MessagesState = () => {
 
   const translateY = selectedMessageIndex * -135;
 
+
+ 
+
   return (
     <div className='z-20'>
       <StateComponent
@@ -115,83 +122,89 @@ const MessagesState = () => {
 };
 
 
+ // ----music----
+
+  const [playMusic] = useSound(songs.audioSrc);
+  const [playMusic02] = useSound('/assets/music/DryRiver.mp3');
+  const [playMusic03] = useSound('/assets/music/More.mp3');
+  const [playMusic04] = useSound('/assets/music/HoldingIn.mp3');
+  const [playMusic05] = useSound('/assets/music/Short.mp3');
+  const [playMusic06] = useSound('/assets/music/Away.mp3');
+  const [playMusic07] = useSound('/assets/music/PeanutButter.mp3');
+  const [playMusic08] = useSound('/assets/music/Uno.mp3');
+  const [playMusic09] = useSound('/assets/music/SummerStreet.mp3');
+  const [playMusic10] = useSound('/assets/music/NothingAmazingHappensHere.mp3');
+  const [playMusic11] = useSound('/assets/music/SeasonEnd.mp3');
+  const [playMusic12] = useSound('/assets/music/NASdyRmx.mp3');
+  const [playMusic13] = useSound('/assets/music/FeelTheFunk.mp3');
+  
 const MusicState = () => {
   const songs = [
     {
-      title: 'The',
-      album: 'Music',
-      audioSrc: '../public/assets/music/Cloudy Hills.mp3',
+      title: 'Cloudy Hills',
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/CloudyHills.mp3',
     },
     {
-      title: 'Feature',
-      album: "doesn't",
-      audioSrc: '../public/assets/music/Dry River.mp3',
+      title: 'Dry River',
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/DryRiver.mp3',
     },
     {
-      title: 'work',
-      album: 'yet.',
+      title: 'More',
+      album: 'Topic.',
       audioSrc: '../public/assets/music/More.mp3', 
     },
-    // {
-    //   title: 'Cloudy Hills',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/Cloudy Hills.mp3',
-    // },
-    // {
-    //   title: 'Dry River',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/Dry River.mp3',
-    // },
-    // {
-    //   title: 'More',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/More.mp3', 
-    // },
-    // {
-    //   title: 'Holding In',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/Holding In.mp3'
-    // },
-    // {
-    //   title: 'Short',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/Short.mp3'
-    // },
-    // {
-    //   title: 'Away',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/Away.mp3'
-    // },
-    // {
-    //   title: 'Peanut Butter',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/Peanut Butter.mp3'
-    // },
-    // {
-    //   title: 'Uno',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/Uno.mp3'
-    // },
-    // {
-    //   title: 'Summer Street',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/Summer Street.mp3'
-    // },
-    // {
-    //   title: 'Nothing Amazing Happens Here',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/Nothing Amazing Happens Here.mp3'
-    // },
-    // {
-    //   title: 'Season End',
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/Season End.mp3'
-    // },
-    // {
-    //   title: "It Ain't Hard to Tell (DY RMX)",
-    //   album: 'Topic.',
-    //   audioSrc: '../public/assets/music/NAS dy Rmx.mp3'
-    // },
+    {
+      title: 'Holding In',
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/HoldingIn.mp3'
+    },
+    {
+      title: 'Short',
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/Short.mp3'
+    },
+    {
+      title: 'Away',
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/Away.mp3'
+    },
+    {
+      title: 'Peanut Butter',
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/PeanutButter.mp3'
+    },
+    {
+      title: 'Uno',
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/Uno.mp3'
+    },
+    {
+      title: 'Summer Street',
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/SummerStreet.mp3'
+    },
+    {
+      title: 'Nothing Amazing Happens Here',
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/NothingAmazingHappensHere.mp3'
+    },
+    {
+      title: 'Season End',
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/SeasonEnd.mp3'
+    },
+    {
+      title: "It Ain't Hard to Tell (DY RMX)",
+      album: 'Topic.',
+      audioSrc: '../public/assets/music/NASdyRmx.mp3'
+    },
+    {
+      title: "Feel The Funk (Computer Love)",
+      album: 'Sebastian Knight',
+      audioSrc: '../public/assets/music/NAS dy Rmx.mp3'
+    },
   ];
 
   const [selectedSongIndex, setSelectedSongIndex] = useState(0);
@@ -225,7 +238,7 @@ const MusicState = () => {
     } else if (event.key === 'ArrowRight') {
       if (!isPlaying) {
         // Play music using useSound when right arrow key is pressed for the selected song
-        play();
+        play()
 
         setBounceAnimation(true);
       setTimeout(() => {
@@ -233,7 +246,7 @@ const MusicState = () => {
       }, 300);
       } else {
         // Stop playing the song
-        stop();
+        stop()
 
         setBounceAnimation(true);
       setTimeout(() => {
