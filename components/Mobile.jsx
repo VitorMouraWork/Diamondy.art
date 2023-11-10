@@ -124,19 +124,19 @@ const MessagesState = () => {
 
  // ----music----
 
-  const [playMusic] = useSound(songs.audioSrc);
-  const [playMusic02] = useSound('/assets/music/DryRiver.mp3');
-  const [playMusic03] = useSound('/assets/music/More.mp3');
-  const [playMusic04] = useSound('/assets/music/HoldingIn.mp3');
-  const [playMusic05] = useSound('/assets/music/Short.mp3');
-  const [playMusic06] = useSound('/assets/music/Away.mp3');
-  const [playMusic07] = useSound('/assets/music/PeanutButter.mp3');
-  const [playMusic08] = useSound('/assets/music/Uno.mp3');
-  const [playMusic09] = useSound('/assets/music/SummerStreet.mp3');
-  const [playMusic10] = useSound('/assets/music/NothingAmazingHappensHere.mp3');
-  const [playMusic11] = useSound('/assets/music/SeasonEnd.mp3');
-  const [playMusic12] = useSound('/assets/music/NASdyRmx.mp3');
-  const [playMusic13] = useSound('/assets/music/FeelTheFunk.mp3');
+  // const [playMusic] = useSound(songs.audioSrc);
+  // const [playMusic02] = useSound('/assets/music/DryRiver.mp3');
+  // const [playMusic03] = useSound('/assets/music/More.mp3');
+  // const [playMusic04] = useSound('/assets/music/HoldingIn.mp3');
+  // const [playMusic05] = useSound('/assets/music/Short.mp3');
+  // const [playMusic06] = useSound('/assets/music/Away.mp3');
+  // const [playMusic07] = useSound('/assets/music/PeanutButter.mp3');
+  // const [playMusic08] = useSound('/assets/music/Uno.mp3');
+  // const [playMusic09] = useSound('/assets/music/SummerStreet.mp3');
+  // const [playMusic10] = useSound('/assets/music/NothingAmazingHappensHere.mp3');
+  // const [playMusic11] = useSound('/assets/music/SeasonEnd.mp3');
+  // const [playMusic12] = useSound('/assets/music/NASdyRmx.mp3');
+  // const [playMusic13] = useSound('/assets/music/FeelTheFunk.mp3');
   
 const MusicState = () => {
   const songs = [
