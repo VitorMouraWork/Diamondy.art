@@ -1,0 +1,81 @@
+body {
+    background-size: 170px 170px;
+    background-position:center;
+    background-position-y: initial;
+    background-color: white;
+    background-image:
+      linear-gradient(to right, #f1f1f1 2px, transparent 2px),
+      linear-gradient(to bottom, #f1f1f1 2px, transparent 2px);
+    overflow-x: hidden;
+}
+
+.bluegrid {
+  background-size: 170px 170px;
+    background-position:center;
+    background-position-y: initial;
+    background-color: #7094FA;
+    background-image:
+      linear-gradient(to right, #6085EF 2px, transparent 2px),
+      linear-gradient(to bottom, #6085EF 2px, transparent 2px);
+    overflow-x: hidden;
+}
+
+.BlueBlur {
+  z-index: -1;
+  opacity: 0.5;
+  animation: spin 15s linear infinite;
+  filter: blur(3.5rem);
+}
+
+.forceblue {
+  filter: invert(75%) sepia(39%) saturate(7037%) hue-rotate(199deg) brightness(99%) contrast(99%);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grassBg {
+  background-image: url("/assets/icons/otom/grassBg.svg");
+  background-repeat: no-repeat;
+  opacity: 50;
+  background-size: cover;
+}
+
+.bgblur {
+  background-image: url("/assets/icons/otom/bgblur.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+i {
+  color: #698DF7;
+  font-weight: bold;
+}
+
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border: solid 3px;
+  background: #698df72f; 
+  border-color: #ffffff;
+  border-radius: 20px;
+
+}

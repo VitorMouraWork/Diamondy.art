@@ -15,6 +15,7 @@ module.exports = {
         'dyblack': '#435058',
         'dywhite': '#F1F2EE',
         'dybluealpha': '#698DF750',
+        'otomblue': '#8FE4FF',
       },
     },
   },
