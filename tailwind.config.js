@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'light-grid': "linear-gradient(to right, #f1f1f1 2px, transparent 2px), linear-gradient(to bottom, #f1f1f1 2px, transparent 2px);",
+      },
       fontFamily: {
         OuterSans: ['OuterSans', 'sans-serif'],
       },

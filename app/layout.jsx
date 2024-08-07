@@ -1,4 +1,4 @@
-import Newsflash from '@/components/Newsflash';
+import Newsflash from '../components/Newsflash';
 import '../styles/globals.css'
 import Header from '/components/Header';
 import Head from 'next/head';

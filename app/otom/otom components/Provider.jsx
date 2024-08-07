@@ -1,12 +1,13 @@
-import '../styles/globals.css';
+'use client';
+import React from "react";
 import { ThemeProvider } from 'next-themes';
 
-function MyApp({ Component, pageProps }) {
+const Provider = ({ children, session }) => {
     return (
         <ThemeProvider enableSystem={true} attribute='class'>
-            <Component {...pageProps} />
+            {children}
         </ThemeProvider>
-    );
+    )
 }
 
-export default MyApp;
+export default Provider;
