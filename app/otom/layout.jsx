@@ -5,8 +5,25 @@ import Darkmode from './otom components/darkmode';
 import Provider from './otom components/Provider';
 
 export const metadata = {
-  title: 'OTOM',
-  description: 'OTOM website',
+  title: 'Over the Object Madness',
+  description: 'o site oficial de OTOM!',
+  url: 'https://diamondy.art.br',
+    siteName: 'Over the Object Madness',
+    images: [
+      {
+        url: 'https://diamondy.art.br/og.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://diamondy.art.br/og.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'otom',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
 }
 
 export default function RootLayout({ children }) {
