@@ -6,7 +6,28 @@ import Provider from './otom components/Provider';
 
 export const metadata = {
   title: 'OTOM',
-  description: 'OTOM website',
+  description: 'o site oficial de OTOM!',
+  openGraph: {
+    title: 'Over the Object Madness',
+    description: 'o site oficial de OTOM!',
+    url: 'https://www.diamondy.art.br',
+    siteName: 'OTOM',
+    images: [
+      {
+        url: 'https://www.diamondy.art.br/og.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://www.diamondy.art.br/og.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: '1600p alt',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({ children }) {
