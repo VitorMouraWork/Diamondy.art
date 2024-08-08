@@ -4,7 +4,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Time from './time';
 import '../styles/mobile.css';
-import { useSound } from 'use-sound';
 
 // Reusable component for delayed rendering and hiding of menu buttons
 const StateComponent = ({ iconSrc, title }) => {

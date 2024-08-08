@@ -3,7 +3,7 @@
 import '../otom.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import Front from "./front.mdx";
+import Front from "./../../content/wikiHome.mdx";
 
 const Otom = () => {
   return (
@@ -14,7 +14,7 @@ const Otom = () => {
           {/* assets */}
           <div className='duration-200 flex flex-col ease-out bg-white dark:bg-slate-900 drop-shadow-md p-5 rounded-3xl w-[80rem] max-w-[80rem] space-y-5'>
               <Image className={"self-center translate-y-5"} src="/assets/icons/otom/otom wiki.svg" width={420} height={420}/>
-              <h3 className='self-center dark:text-white'>Wiki Oficial de Over the Object Madness</h3>
+              <p className='self-center dark:text-white'>Wiki Oficial de Over the Object Madness</p>
               <hr className='dark:opacity-20'></hr>
               <div className='w-full justify-between px-24 flex'>
                 <Link className="text-dyblue flex" href={"/otom/wiki/sobre"}><Image className="mx-1" src="/assets/icons/otom/info.svg" width={18} height={18}/> Sobre</Link> 

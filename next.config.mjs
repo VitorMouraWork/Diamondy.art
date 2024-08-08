@@ -1,7 +1,16 @@
+import nextMDX from '@next/mdx'
+import remarkSlug from 'remark-slug';
+import remarkAutolinkHeadings from 'remark-autolink-headings';
+
+const withMDX = nextMDX({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [remarkSlug, remarkAutolinkHeadings],
+    rehypePlugins: [],
+  }
+})
+
 /** @type {import('next').NextConfig} */
-
-const withMDX = require('@next/mdx')()
-
 const nextConfig = {
     pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
     experimental: {
@@ -28,4 +37,4 @@ const nextConfig = {
     }
   }
   
-  module.exports = withMDX(nextConfig)
+  export default withMDX(nextConfig)

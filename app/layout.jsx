@@ -1,4 +1,3 @@
-import Newsflash from '../components/Newsflash';
 import '../styles/globals.css'
 import Header from '/components/Header';
 import Head from 'next/head';
@@ -15,7 +14,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body><Header/><Mobile/>{children}<Newsflash/></body>
+      <body><Header/><Mobile/>{children}</body>
     </html>
   )
 }

@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/d36519b3-8484-4fe2-b637-74e162149f12.png?token=IPXlh_EvHMdzCGUfIrB5qIw8R1dGut9LVT3UKIcn-Tg&height=324&width=476&expires=33259057032"/>
       </Head>
       <Provider>
-      <body className='lightgrid bg:white dark:bg-[#0C1222] h-full'>
+      <body className='lightgrid bg:white dark:bg-[#0C1222] h-full duration-200 ease-out'>
           <Darkmode/>
             <OtomHeader/>
             {children}

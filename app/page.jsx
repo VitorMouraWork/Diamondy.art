@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import Newsflash from '../components/Newsflash';
 import '../styles/globals.css'
 
 const Home = () => {
@@ -96,6 +97,7 @@ const Home = () => {
       </div>
       </section>
       <div className='bghome'/>
+      <Newsflash/>
     </>
   )
 }
