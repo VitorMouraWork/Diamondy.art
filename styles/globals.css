@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/made-outer-sans-alt?styles=51353,51351,51362');
 @import url('https://fonts.cdnfonts.com/css/the-bold-font');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
     --dycharcoal: #435058;
@@ -162,6 +163,9 @@ body{
 
 .otomtxt {
     font-family: 'The Bold Font', sans-serif;
+}
+.inter {
+    font-family: 'Inter', sans-serif;
 }
 
 @keyframes textAppear {

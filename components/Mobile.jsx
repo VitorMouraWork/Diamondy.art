@@ -41,6 +41,10 @@ const StateComponent = ({ iconSrc, title }) => {
 const MessagesState = () => {
   const messages = [
     {
+      title: '06/08/2024 Update',
+      content: 'started working on the otom page. might be done by next week!',
+    },
+    {
       title: '09/11/2023 Update',
       content: 'yeah, im still trying to figure out how to make the music work...',
     },

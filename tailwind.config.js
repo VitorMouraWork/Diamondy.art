@@ -5,6 +5,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './mdx-components.jsx',
   ],
   theme: {
     extend: {
@@ -13,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         OuterSans: ['OuterSans', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       colors: {
         'dyblue': '#698DF7',
@@ -26,5 +28,7 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

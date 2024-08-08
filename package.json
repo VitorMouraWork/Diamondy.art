@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@next/mdx": "^14.2.5",
+    "@types/mdx": "^2.0.13",
     "autoprefixer": "10.4.14",
     "next": "^14.2.5",
     "next-themes": "^0.3.0",
@@ -19,6 +23,7 @@
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.14",
     "@types/node": "22.1.0",
     "@types/react": "18.3.3",
     "typescript": "5.5.4"

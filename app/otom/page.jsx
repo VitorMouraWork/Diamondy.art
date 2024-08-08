@@ -25,10 +25,10 @@ const Otom = () => {
               </div>
 
               {/* parte 2 */}
-              <div class="flex flex-col w-full items-center justify-center mt-20 mb-40">
+              <div className="flex flex-col w-full items-center justify-center mt-20 mb-40">
                 <div className='duration-200 ease-out p-5 py-1 dark:border-slate-800 dark:bg-slate-800 border-black border-2 rounded-2xl'>
                   <h2 className='text-xl dark:text-white mb-1'>Último lançamento:</h2> 
-                  <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/ZqD2OkNn8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/ZqD2OkNn8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                   <div className='flex w-full justify-between'>
                     <h2 className='text-3xl dark:text-white my-2'>OTOM 12: O Tombo</h2>
                     <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>18 de jul. de 2024</p>
@@ -47,10 +47,10 @@ const Otom = () => {
               </div>
 
               {/* parte 2 */}
-              <div class="flex flex-col w-full items-center justify-center mt-20 mb-40">
+              <div className="flex flex-col w-full items-center justify-center mt-20 mb-40">
                 <div className='duration-200 ease-out p-5 py-1 dark:border-slate-800 dark:bg-slate-800 border-black border-2 rounded-2xl'>
                   <h2 className='text-xl dark:text-white mb-1'>Último lançamento:</h2> 
-                  <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/ZqD2OkNn8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/ZqD2OkNn8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                   <div className='flex w-full justify-between'>
                     <h2 className='text-3xl dark:text-white my-2'>OTOM 12: O Tombo</h2>
                     <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>18 de jul. de 2024</p>

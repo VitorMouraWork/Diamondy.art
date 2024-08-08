@@ -11,7 +11,7 @@ const Games = () => {
       <div className='flex'>
         <h1 translate="no" className="text-dyblack text-7xl">Games</h1><Image className={"mx-3"} src="/assets/icons/arrow.svg" width={30} height={30}/>
       </div>
-        <div class="flex justify-space-between items-center justify-center w-full">
+        <div className="flex justify-space-between items-center justify-center w-full">
 
         <Link href="/games/goime500">
           <div className='m-3 game-shadow flex-1 flex justify-start gap-3 cursor-pointer hover:scale-105 transition-all ease-out shadow-md rounded-xl overflow-hidden'>

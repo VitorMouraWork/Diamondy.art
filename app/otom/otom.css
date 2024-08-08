@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .lightgrid {
     background-size: 170px 170px;
     background-position:center;
@@ -27,8 +29,10 @@
   filter: blur(3.5rem);
 }
 
-.forceblue {
-  filter: invert(75%) sepia(39%) saturate(7037%) hue-rotate(199deg) brightness(99%) contrast(99%);
+.markdown {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 @keyframes spin {

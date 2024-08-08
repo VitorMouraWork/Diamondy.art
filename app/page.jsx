@@ -17,9 +17,9 @@ const Home = () => {
     <>
     <section className="w-full z-10 mt-6 px-40">
       <h1 translate="no" className="text-dyblue text-7xl textAppear animate-textAppear">Diamondy.art</h1>
-      <div class="about flex mt-3">
+      <div className="about flex mt-3">
 
-        <div class="dropdown-session">
+        <div className="dropdown-session">
           
             <Image
               className={`mt-1 relative mx-3 transition-transform duration-200 ease-out ${isDropdownOpen ? 'rotate-90' : ''}`}
@@ -49,7 +49,7 @@ const Home = () => {
         </div>
 
         <h2 className='text-2xl mr-4 self-center'>Freelance Artist</h2>
-        <div class="flex justify-space-between items-center justify-center">
+        <div className="flex justify-space-between items-center justify-center">
 
           <Link href={"https://www.youtube.com/c/Diamondyy"} className='mx-4'>
             <Image 
