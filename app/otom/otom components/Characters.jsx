@@ -2,11 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import frame98 from '../../../public/characters/frame98.png';
+import Frame98 from '../../../public/characters/Frame98.png';
 
 // Sample array of character image paths (replace with actual paths)
 const characters = [
-  {frame98},
+  {Frame98},
   '/characters/frame99.png',
   '/characters/frame100.png',
   '/characters/frame101.png',
