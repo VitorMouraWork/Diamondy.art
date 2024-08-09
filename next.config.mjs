@@ -12,6 +12,16 @@ const withMDX = nextMDX({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    // limit of 50 domains values (deprecated)
+    domains: [
+      'https://www.diamondy.art.br'
+    ],
+    // loader can be 'default', 'imgix', 'cloudinary', 'akamai', or 'custom'
+    loader: 'default',
+    // disable static imports for image files
+    disableStaticImages: false,
+  },
     pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
     experimental: {
       serverComponentsExternalPackages: ["mongoose"],
