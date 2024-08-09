@@ -5,33 +5,33 @@ import Image from 'next/image';
 
 // Sample array of character image paths (replace with actual paths)
 const characters = [
-  '/characters/frame98.png',
-  '/characters/frame99.png',
-  '/characters/frame100.png',
-  '/characters/frame101.png',
-  '/characters/frame102.png',
-  '/characters/frame103.png',
-  '/characters/frame104.png',
-  '/characters/frame105.png',
-  '/characters/frame106.png',
-  '/characters/frame107.png',
-  '/characters/frame108.png',
-  '/characters/frame109.png',
-  '/characters/frame110.png',
-  '/characters/frame111.png',
-  '/characters/frame112.png',
-  '/characters/frame113.png',
-  '/characters/frame114.png',
-  '/characters/frame115.png',
-  '/characters/frame116.png',
-  '/characters/frame117.png',
-  '/characters/frame118.png',
-  '/characters/frame119.png',
-  '/characters/frame120.png',
-  '/characters/frame121.png',
-  '/characters/frame122.png',
-  '/characters/frame123.png',
-  '/characters/frame124.png',
+  <img src={'/characters/frame98.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame99.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame100.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame101.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame102.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame103.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame104.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame105.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame106.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame107.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame108.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame109.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame110.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame111.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame112.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame113.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame114.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame115.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame116.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame117.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame118.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame119.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame120.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame121.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame122.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame123.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
+  <img src={'/characters/frame124.png'} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>,
 ];
 
 const usedCharacters = new Set(); // To keep track of used characters
@@ -59,9 +59,7 @@ const Characters = () => {
   }, []);
 
   return (
-    character && (
-      <img src={character} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>
-    )
+    character
   );
 };
 
