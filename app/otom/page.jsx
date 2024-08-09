@@ -21,7 +21,7 @@ const Otom = () => {
         <div className='-ml-[4rem] mt-[24rem]'><Characters/></div>
         <div className='ml-[7rem] -mt-[5rem]'><Characters/></div>
         <div className='ml-[12rem] -mt-[15rem]'><Characters/></div>
-        <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute ml-[7rem] mt-[10rem] pointer-events-none'/>
+        <Image src="/assets/icons/otom/Grass.svg" width={1200} height={1200} className='absolute ml-[7rem] mt-[10rem] pointer-events-none'/>
       </div>
       <div className='ml-[28rem]'>
         <div className='ml-[21rem] mt-[0rem]'><Characters/></div>
@@ -87,8 +87,8 @@ const Otom = () => {
                     <div className='-ml-[50rem] -mt-[4rem]'><Characters/></div>
                     <div className='ml-[32rem] -mt-[5rem]'><Characters/></div>
                     <div className='ml-[25rem] mt-[35rem]'><Characters/></div>
-                    <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute pointer-events-none ml-[30rem] z-0 mt-[0rem]'/>
-                    <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute pointer-events-none -ml-[100rem] z-0 mt-[0rem]'/>
+                    <Image src="/assets/icons/otom/Grass.svg" width={1200} height={1200} className='absolute pointer-events-none ml-[30rem] z-0 mt-[0rem]'/>
+                    <Image src="/assets/icons/otom/Grass.svg" width={1200} height={1200} className='absolute pointer-events-none -ml-[100rem] z-0 mt-[0rem]'/>
                   </div>
                 </div>
 
@@ -190,8 +190,8 @@ const Otom = () => {
                     <div className='ml-[30rem] mt-[32rem]'><Characters/></div>
                     <div className='ml-[40rem] mt-[37rem]'><Characters/></div>
 
-                    <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute pointer-events-none ml-[30rem] z-0 mt-[0rem] -z-10'/>
-                    <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute pointer-events-none -ml-[100rem] z-0 mt-[0rem] z-0'/>
+                    <Image src="/assets/icons/otom/Grass.svg" width={1200} height={1200} className='absolute pointer-events-none ml-[30rem] z-0 mt-[0rem] -z-10'/>
+                    <Image src="/assets/icons/otom/Grass.svg" width={1200} height={1200} className='absolute pointer-events-none -ml-[100rem] z-0 mt-[0rem] z-0'/>
                   </div>
                 </div>
         <div className='flex space-x-5 mb-8 -mt-[2rem]'>
