@@ -60,7 +60,7 @@ const Characters = () => {
 
   return (
     character && (
-      <img src={character} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>
+      <Image src={character} width={252} height={552} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>
     )
   );
 };
@@ -68,4 +68,4 @@ const Characters = () => {
 export default Characters;
 
 
-{/* <Image src={character} width={252} height={552} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/> */}
+{/* <img src={character} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/> */}
