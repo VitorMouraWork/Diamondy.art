@@ -4,7 +4,7 @@ import frame98 from '../../../public/characters/frame98.png';
 
 // Sample array of character image paths (replace with actual paths)
 const characters = [
-  frame98,
+  {frame98},
   '/characters/frame99.png',
   '/characters/frame100.png',
   '/characters/frame101.png',
