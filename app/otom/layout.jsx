@@ -50,7 +50,6 @@ export default function RootLayout({ children }) {
       <Provider>
       <body className='lightgrid bg:white dark:bg-[#0C1222] h-full duration-200 ease-out'>
           <Darkmode/>
-            <OtomHeader/>
             {children}
       </body>
       </Provider>

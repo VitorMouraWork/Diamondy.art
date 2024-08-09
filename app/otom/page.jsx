@@ -6,10 +6,12 @@ import Image from 'next/image';
 import BlueBlur from './otom components/blueblur';
 import OtomNews from './otom components/OtomNews';
 import Characters from './otom components/Characters';
+import OtomHeader from './otom components/OtomHeader';
 
 const Otom = () => {
   return (
     <>
+    <OtomHeader/>
     <BlueBlur/>
 
     {/* personagens */}
