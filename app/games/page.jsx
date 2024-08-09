@@ -1,5 +1,6 @@
 "use client";
 
+import Header from '../../components/Header';
 import Link from 'next/link';
 import Image from 'next/image';
 import '../../styles/globals.css'
@@ -7,6 +8,7 @@ import '../../styles/globals.css'
 const Games = () => {
   return (
     <>
+    <Header/>
     <section className="w-full z-10 mt-8 px-40">
       <div className='flex'>
         <h1 translate="no" className="text-dyblack text-7xl">Games</h1><Image className={"mx-3"} src="/assets/icons/arrow.svg" width={30} height={30}/>

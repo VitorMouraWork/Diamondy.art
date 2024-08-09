@@ -11,7 +11,7 @@ export default function FunFacts({ count }) {
     "... OTOM foi o primeiro object show animado brasileiro?",
     "... Diamondy não foi o primeiro a dublar em OTOM?",
     "... a primeira temporada originalmente teria 8 episódios?",
-    "... a música da intro de otom original é um YTP da música Pyro Flow de Kevin McLeod?",
+    "... a música da intro da terceira temporada original é um YTP da música Pyro Flow de Kevin McLeod?",
 
     // Add more quotes as needed
   ];

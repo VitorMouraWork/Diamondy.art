@@ -1,6 +1,5 @@
 import './otom.css'
 import Head from 'next/head';
-import OtomHeader from './otom components/OtomHeader';
 import Darkmode from './otom components/darkmode';
 import Provider from './otom components/Provider';
 

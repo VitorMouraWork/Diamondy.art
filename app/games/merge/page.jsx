@@ -1,5 +1,6 @@
 'use client';
 
+import Header from '../../../components/Header';
 import { React, useEffect, useState } from 'react';
 import Head from 'next/head';
 
@@ -12,7 +13,7 @@ const Merge = () => {
         <title>merge</title>
         <script src="/games/merge/src/Runtime.js"></script>
       </Head>
-
+      <Header/>
       <h1 className="flex w-full text-2xl my-3 self-center items-center justify-center">Merge</h1>
       <div className={'rounded-lg flex w-full self-center items-center justify-center'}>
         <iframe className="rounded-lg " src="https://cdm4-merge.netlify.app" width="1220" height="705" />

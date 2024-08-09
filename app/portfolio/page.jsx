@@ -1,6 +1,7 @@
 
 "use client";
 
+import Header from '../../components/Header';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -67,6 +68,7 @@ const Portfolio = () => {
 
   return (
     <>
+    <Header/>
       <section className="w-full z-10 flex-col h-full px-30">
         <div className="flex fixed z-10 ml-40 mt-8">
           <h1 translate="no" className="text-dyblack text-7xl">

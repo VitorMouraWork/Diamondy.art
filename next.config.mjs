@@ -12,7 +12,9 @@ const withMDX = nextMDX({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: { unoptimized: true },
+    images: {
+      unoptimized: true 
+    },
     pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
     experimental: {
       serverComponentsExternalPackages: ["mongoose"],

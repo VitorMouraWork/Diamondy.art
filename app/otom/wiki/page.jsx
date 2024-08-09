@@ -4,10 +4,12 @@ import '../otom.css'
 import Link from 'next/link';
 import Image from 'next/image';
 import Front from "./../../content/wikiHome.mdx";
+import WikiHeader from './wiki components/WikiHeader';
 
 const OtomWiki = () => {
   return (
     <>
+    <WikiHeader/>
       <section className="w-full h-full z-10 flex flex-col items-center justify-center">     
         {/* parte 1 */}
         <div className='flex flex-col justify-center items-center w-full py-40 space-y-3 bgblur'>

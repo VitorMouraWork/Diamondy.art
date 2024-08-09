@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from "react";
-import { useMDXComponents } from '@mdx-js/react';
 import { useEffect } from "react";
 import Image from "next/image";
 

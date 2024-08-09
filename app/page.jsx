@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import Newsflash from '../components/Newsflash';
+import Header from '../components/Header';
 import '../styles/globals.css'
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
 
   return (
     <>
+    <Header/>
     <section className="w-full z-10 mt-6 px-40">
       <h1 translate="no" className="text-dyblue text-7xl textAppear animate-textAppear">Diamondy.art</h1>
       <div className="about flex mt-3">
