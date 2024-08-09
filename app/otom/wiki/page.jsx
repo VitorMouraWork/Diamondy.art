@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Front from "./../../content/wikiHome.mdx";
 
-const Otom = () => {
+const OtomWiki = () => {
   return (
     <>
       <section className="w-full h-full z-10 flex flex-col items-center justify-center">     
@@ -34,4 +34,4 @@ const Otom = () => {
   )
 }
 
-export default Otom;
+export default OtomWiki;

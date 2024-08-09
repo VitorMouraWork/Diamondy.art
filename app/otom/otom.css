@@ -44,6 +44,19 @@
   }
 }
 
+.gelatine:hover{
+  animation: gelatine 2s infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  5% { transform: scale(0.9, 1.1); }
+  10% { transform: scale(1.1, 0.9); }
+  15% { transform: scale(0.95, 1.05); }
+  20% { transform: scale(1, 1); }
+}
+
 .grassBg {
   background-image: url("/assets/icons/otom/grassBg.svg");
   background-repeat: no-repeat;

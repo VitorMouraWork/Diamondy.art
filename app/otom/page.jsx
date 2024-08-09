@@ -5,23 +5,41 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BlueBlur from './otom components/blueblur';
 import OtomNews from './otom components/OtomNews';
+import Characters from './otom components/Characters';
 
 const Otom = () => {
   return (
     <>
     <BlueBlur/>
+
+    {/* personagens */}
+    <div className='absolute w-full flex flex-col items-center z-10'>
+      <div className='-ml-[80rem]'>
+        <div className='-ml-[8rem] mt-[10rem]'><Characters/></div>
+        <div className='-ml-[4rem] mt-[24rem]'><Characters/></div>
+        <div className='ml-[7rem] -mt-[5rem]'><Characters/></div>
+        <div className='ml-[12rem] -mt-[15rem]'><Characters/></div>
+        <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute ml-[7rem] mt-[10rem] pointer-events-none'/>
+      </div>
+      <div className='ml-[28rem]'>
+        <div className='ml-[21rem] mt-[0rem]'><Characters/></div>
+        <div className='ml-[41rem] mt-[2rem]'><Characters/></div>
+        <div className='ml-[40rem] mt-[10rem]'><Characters/></div>
+        <div className='ml-[28rem] mt-[12rem]'><Characters/></div>
+      </div>
+    </div>
+
       <section className="w-full h-full z-10 mt-32 flex flex-col items-center justify-center">
         
         <OtomNews/>
-
+        
         {/* parte 1 */}
-          <div className='grassBg w-full px-[20%] mt-36 block dark:hidden'>
-
-              <div className='flex z-10 w-full justify-center flex-col items-center -translate-y-20 flex'>
+          <div className='grassBg w-full px-[20%] mt-36 block dark:hidden'>             
+              <div className='flex z-10 w-full justify-center flex-col items-center -translate-y-20 z-40 flex'>
                 <Image className={"mx-3 mb-14"} src="/assets/icons/otom/OTOM.svg" width={420} height={420}/>
                 <h1 className='-translate-y-16 text-dyblack dark:text-white text-2xl'>Over the Object Madness</h1>
 
-                <a target="_blank" rel="noopener noreferrer"  href="https://www.youtube.com/watch?v=1iNW3b7ioxI&pp=ygUEb3RvbQ%3D%3D" className='group dark:bg-slate-800 dark:text-white flex justify-center duration-200 items-center mt-10 border-2 border-black rounded-full px-5 hover:px-6 py-3'> Assista o último episódio <Image src="/assets/icons/arrow.svg" width={15} height={15} className='ml-3 ease-out duration-200 dark:invert group-hover:translate-x-1 group-hover:-translate-y-1'/></a>
+                <a target="_blank" rel="noopener noreferrer"  href="https://www.youtube.com/watch?v=1iNW3b7ioxI&pp=ygUEb3RvbQ%3D%3D" className='group dark:bg-slate-800 dark:text-white flex justify-center duration-200 items-center mt-10 border-2 border-black rounded-full px-5 hover:px-6 py-3 z-40'> Assista o último episódio <Image src="/assets/icons/arrow.svg" width={15} height={15} className='ml-3 ease-out duration-200 dark:invert group-hover:translate-x-1 group-hover:-translate-y-1'/></a>
               </div>
 
               {/* parte 2 */}
@@ -34,6 +52,7 @@ const Otom = () => {
                     <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>18 de jul. de 2024</p>
                   </div>
                 </div>
+
               </div>
           </div>
               {/* parte 2 dark*/}
@@ -58,6 +77,30 @@ const Otom = () => {
                 </div>
               </div>
           </div>
+
+          {/* personagens */}
+          <div className='absolute w-full flex flex-col items-center z-10 '>
+                  <div className='ml-[30rem] mb-[75rem]'>
+                    <div className='-ml-[40rem] mt-[30rem]'><Characters/></div>
+                    <div className='-ml-[50rem] -mt-[4rem]'><Characters/></div>
+                    <div className='ml-[32rem] -mt-[5rem]'><Characters/></div>
+                    <div className='ml-[25rem] mt-[35rem]'><Characters/></div>
+                    <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute pointer-events-none ml-[30rem] z-0 mt-[0rem]'/>
+                    <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute pointer-events-none -ml-[100rem] z-0 mt-[0rem]'/>
+                  </div>
+                </div>
+
+                <div className='absolute w-full flex flex-col items-center z-10 '>
+                  <div className='ml-[35rem] -mb-[23rem]'>
+                    <div className='-ml-[36rem] mt-[25rem]'><Characters/></div>
+                    <div className='-ml-[50rem] mt-[25rem]'><Characters/></div>
+                    <div className='ml-[42rem] mt-[25rem]'><Characters/></div>
+                    <div className='ml-[30rem] mt-[25rem]'><Characters/></div>
+                    <div className='ml-[0rem] mt-[25rem]'><Characters/></div>
+                    <div className='ml-[20rem] mt-[25rem]'><Characters/></div>
+
+                  </div>
+                </div>
             
           {/* parte 3 */}
           <div className='px-[20%] mt-20'>
@@ -84,6 +127,7 @@ const Otom = () => {
                 <div className='duration-200 ease-out flex border-b-[10px] dark:bg-slate-800 dark:border-slate-700 flex-col items-center justify-center bg-white border-4 border-black rounded-xl p-5 px-5 w-96'>
                   <h3 className='text-4xl dark:text-white font-bold'>1616</h3>
                   <h4 className='text-xl dark:text-white'>Votos</h4>
+
                 </div>
               </div>
             </div>
@@ -92,7 +136,7 @@ const Otom = () => {
         {/* parte 4 */}
         <div className='flex flex-col justify-center items-center w-full py-40 space-y-5 bgblur mb-20'>
           {/* assets */}
-          <div className='duration-200 ease-out bg-white dark:bg-slate-800 drop-shadow-md p-5 rounded-3xl max-w-fit flex justify-between'>
+          <div className='duration-200 ease-out bg-white dark:bg-slate-800 drop-shadow-md p-5 mt-48 rounded-3xl max-w-fit flex justify-between'>
             <div>
               <h3 className='text-2xl dark:text-white font-bold'>OTOM é Open Source.</h3>
               <p className='w-[39rem] dark:text-white '>Nós liberamos os arquivos fonte de OTOM para que você possa estudar e aprender a fazer suas próprias animações.</p>
@@ -127,10 +171,28 @@ const Otom = () => {
               </a>
             </div>
           </div>
+          <div className='flex mt-2'>
+          <div className='-ml-[20rem]'><Characters/></div>
+          <div className='ml-[17rem] '><Characters/></div>
+          <div className='ml-[15rem] '><Characters/></div>
+          <div className='ml-[12rem] -mb-[5rem]'><Characters/></div>
+          </div>
         </div>
 
         {/* redes sociais */}
-        <div className='flex space-x-5 mb-9'>
+        <div className='absolute w-full flex flex-col items-center -mb-[90rem] z-10'>
+                  <div className='ml-[35rem] -mb-[312rem]'>
+                    <div className='-ml-[44rem] mt-[20rem]'><Characters/></div>
+                    <div className='-ml-[54rem] -mt-[15rem]'><Characters/></div>
+                    <div className='ml-[42rem] mt-[20rem]'><Characters/></div>
+                    <div className='ml-[30rem] mt-[32rem]'><Characters/></div>
+                    <div className='ml-[40rem] mt-[37rem]'><Characters/></div>
+
+                    <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute pointer-events-none ml-[30rem] z-0 mt-[0rem] -z-10'/>
+                    <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute pointer-events-none -ml-[100rem] z-0 mt-[0rem] z-0'/>
+                  </div>
+                </div>
+        <div className='flex space-x-5 mb-9 -mt-[2rem]'>
           <a target="_blank" rel="noopener noreferrer"  href="https://www.youtube.com/@OTOM2">
             <p className='text-xl flex w-max rounded-full bg-white dark:bg-slate-800 dark:text-white text-dyblack p-2 px-5 dark:hover:text-dyblue hover:text-dyblue duration-200 ease-out border-2 border-black'>  <Image src="/assets/icons/otom/youtube.svg" className='mr-3' width={20} height={20}/>@OTOM2</p>
           </a>
