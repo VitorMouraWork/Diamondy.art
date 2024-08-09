@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 // Sample array of character image paths (replace with actual paths)
 const characters = [
@@ -56,7 +57,15 @@ const Characters = () => {
   }, []);
 
   return (
-    <img src={character} className="aspect-auto max-w-52 max-h-52 absolute gelatine" alt="Character" />
+    character && (
+      <Image
+        src={character}
+        width={252}
+        height={552}
+        className='aspect-auto max-w-52 max-h-52 absolute gelatine'
+        alt='Character'
+      />
+    )
   );
 };
 

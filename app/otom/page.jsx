@@ -171,10 +171,10 @@ const Otom = () => {
               </a>
             </div>
           </div>
-          <div className='flex mt-2'>
-          <div className='-ml-[20rem]'><Characters/></div>
+          <div className='flex translate-y-5'>
+          <div className='-ml-[16rem]'><Characters/></div>
           <div className='ml-[17rem] '><Characters/></div>
-          <div className='ml-[15rem] '><Characters/></div>
+          <div className='ml-[17rem] '><Characters/></div>
           <div className='ml-[12rem] -mb-[5rem]'><Characters/></div>
           </div>
         </div>
@@ -192,7 +192,7 @@ const Otom = () => {
                     <Image src="/assets/icons/otom/grass.svg" width={1200} height={1200} className='absolute pointer-events-none -ml-[100rem] z-0 mt-[0rem] z-0'/>
                   </div>
                 </div>
-        <div className='flex space-x-5 mb-9 -mt-[2rem]'>
+        <div className='flex space-x-5 mb-8 -mt-[2rem]'>
           <a target="_blank" rel="noopener noreferrer"  href="https://www.youtube.com/@OTOM2">
             <p className='text-xl flex w-max rounded-full bg-white dark:bg-slate-800 dark:text-white text-dyblack p-2 px-5 dark:hover:text-dyblue hover:text-dyblue duration-200 ease-out border-2 border-black'>  <Image src="/assets/icons/otom/youtube.svg" className='mr-3' width={20} height={20}/>@OTOM2</p>
           </a>
