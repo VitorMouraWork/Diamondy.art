@@ -58,15 +58,12 @@ const Characters = () => {
 
   return (
     character && (
-      <Image
-        src={character}
-        width={252}
-        height={552}
-        className='aspect-auto max-w-52 max-h-52 absolute gelatine'
-        alt='Character'
-      />
+      <img src={character} alt="Character" className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>
     )
   );
 };
 
 export default Characters;
+
+
+{/* <Image src={character} width={252} height={552} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/> */}
