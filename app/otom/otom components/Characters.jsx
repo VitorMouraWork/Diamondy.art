@@ -58,7 +58,7 @@ const Characters = () => {
 
   return (
     character && (
-      <img src={character} alt="Character" className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>
+      <img src={character} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>
     )
   );
 };
