@@ -56,7 +56,7 @@ const Characters = () => {
   }, []);
 
   return (
-    <img src={character} className="aspect-auto max-w-52 max-h-52 absolute gelatine" alt="Character" />
+    <Image src={character} className="aspect-auto max-w-52 max-h-52 absolute gelatine" alt="Character" />
   );
 };
 
