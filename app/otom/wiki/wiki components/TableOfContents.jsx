@@ -1,55 +1,64 @@
 'use client';
 
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
-const TableOfContents = ({ content }) => {
-    const [headings, setHeadings] = useState([]);
+const TableOfContents = () => {
+  const [headings, setHeadings] = useState([]);
+  const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
-    // Captura todos os headings após a renderização completa da página
-    const headingElements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'));
+    // Ensure the effect runs after the component mounts
+    const handleUpdateHeadings = () => {
+      const headingElements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'));
 
-    // Mapeia os headings para extrair o ID, título e nível
-    const extractedHeadings = headingElements.map((heading) => ({
-      id: heading.id,
-      title: heading.innerText,
-      level: Number(heading.tagName.replace('H', '')),
-    }));
+      const extractedHeadings = headingElements.map((heading) => ({
+        id: heading.id,
+        title: heading.innerText,
+        level: Number(heading.tagName.replace('H', '')),
+      }));
 
-    setHeadings(extractedHeadings);
-  }, []); // Executa o efeito apenas uma vez após o primeiro render
-    
-    
-    const [isHidden, setIsHidden] = useState(false);
-
-    const toggleListVisibility = () => {
-        setIsHidden(!isHidden);
+      setHeadings(extractedHeadings);
     };
 
-    return (  
-        <div className='duration-200 ease-out mb-10 w-fit space-x-10 flex flex-col w-min-96 bg-white dark:bg-slate-800 drop-shadow-lg rounded-3xl p-5 space-y-2'> 
-            <div className="flex items-center justify-between w-full">
-                <div className="flex items-center justify-center px-y">
-                    <Image className="mr-2 brightness-0 dark:brightness-200 my-0" src="/assets/icons/otom/list.svg" width={22} height={22}/> 
-                    <p className="text-xl dark:text-white mr-2 my-0">Conteúdo</p>
-                </div>
+    // Run the function once when the component mounts
+    handleUpdateHeadings();
 
-                <button onClick={toggleListVisibility} className=" text-dyblue text-xs">
-                    {isHidden ? '[mostrar]' : '[esconder]'}
-                </button>
-            </div>
-            <hr className={isHidden ? 'hidden my-0 mx-0' : 'my-0 mx-0'}></hr>
-            <ol className={isHidden ? 'hidden flex flex-col' : 'my-0 ml-0 flex flex-col'}>
-                {headings.map((heading, index) => (
-                    <li key={index} className={`ml-${heading.level * 2}`}>
-                        <a href={`#${heading.id}`}>{heading.title}</a>
-                    </li>
-                ))}
-            </ol>
+    // Optional: You can attach this function to a resize or other events if necessary
+    window.addEventListener('resize', handleUpdateHeadings);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleUpdateHeadings);
+    };
+  }, []); // Empty dependency array ensures this effect runs once on mount
+
+  const toggleListVisibility = () => {
+    setIsHidden(!isHidden);
+  };
+
+  return (
+    <div className='duration-200 ease-out mb-10 w-fit space-x-10 flex flex-col w-min-96 bg-white dark:bg-slate-800 drop-shadow-lg rounded-3xl p-5 space-y-2'>
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-center px-y">
+          <Image className="mr-2 brightness-0 dark:brightness-200 my-0" src="/assets/icons/otom/list.svg" width={22} height={22} alt="List Icon" />
+          <p className="text-xl dark:text-white mr-2 my-0">Conteúdo</p>
         </div>
-    );
+
+        <button onClick={toggleListVisibility} className=" text-dyblue text-xs">
+          {isHidden ? '[mostrar]' : '[esconder]'}
+        </button>
+      </div>
+      <hr className={isHidden ? 'hidden my-0 mx-0' : 'my-0 mx-0'}></hr>
+      <ol className={isHidden ? 'hidden flex flex-col' : 'my-0 ml-0 flex flex-col'}>
+        {headings.map((heading, index) => (
+          <li key={index} className={`my-0 ml-${heading.level * 2}`}>
+            <a className="font-thin my-0 no-underline hover:underline" href={`#${heading.id}`}>{heading.title}</a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
 };
 
 export default TableOfContents;

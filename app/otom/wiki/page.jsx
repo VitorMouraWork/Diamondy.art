@@ -1,9 +1,9 @@
 "use client";
 
-import '../otom.css'
+import '../otom.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import Front from "./../../content/wikiHome.mdx";
+import Front from "./Contents/wikiHome.mdx";
 import WikiHeader from './wiki components/WikiHeader';
 
 const OtomWiki = () => {
