@@ -12,7 +12,7 @@ const OtomHeader = () => {
       <p className="dark:text-white otomtxt text-xl font-bold duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue logo mx-14">OTOM</p>
     </Link>
     <Link href={'/otom/wiki'}>
-      <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue mx-14 before:content-['Wiki'] hover:before:content-['Em_Breve!']"></p>
+      <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue mx-14">Wiki</p>
     </Link>
     <Link href={'/otom/blog'}>
       <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue mx-14 before:content-['Blog'] hover:before:content-['Em_Breve!']"></p>
@@ -20,7 +20,7 @@ const OtomHeader = () => {
     <Link href={'https://drive.google.com/drive/u/1/folders/1jPEaSmrXxMvIrjGyZRcV9OH_DX0ovaN8'}>
       <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue mx-14">Assets</p>
     </Link>
-    <Link href={'/otom/jogos'}>
+    <Link href={'/games'}>
       <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue mx-14 before:content-['Jogos'] hover:before:content-['Em_Breve!']"></p>
     </Link>
   </nav>

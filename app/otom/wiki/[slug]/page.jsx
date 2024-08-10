@@ -55,7 +55,7 @@ export default async function WikiPage({ params }) {
             <hr></hr>
             <TableOfContents />
             <MDXContent source={mdxSource} />
-            <p className='opacity-25 text-xs translate-y-5'>O conteúdo da wiki está disponível sob CC-BY-SA salvo indicação em contrário.</p>
+            <p className='opacity-25 text-xs translate-y-5'>O conteúdo da wiki está disponível sob CC-BY-SA. © Over the Object Madness 2024</p>
           </div>
         </div>
       </section>
