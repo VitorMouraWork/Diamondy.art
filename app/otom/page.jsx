@@ -6,23 +6,9 @@ import BlueBlur from './otom components/blueblur';
 import OtomNews from './otom components/OtomNews';
 import Characters from './otom components/Characters';
 import OtomHeader from './otom components/OtomHeader';
-import { useState, useEffect } from 'react';
+
 const Otom = () => {
-// get latest video
-const [video, setVideo] = useState();
-const [videoTitle, setVideoTitle] = useState([]);
-const [videoDate, setVideoDate] = useState([]);
-useEffect(() => {
-    try {
-        const data = fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3DUCJNKXLfv5M06iJAgMA9LHZg').then(response => response.json());
-        setVideo(data.items[0].link);
-        setVideoTitle(data.items[0].title)
-        setVideoDate(data.items[0].pubDate)
-    } catch (error) {
-        console.log(error);
-    }
- 
-});
+
   return (
     <>
     <OtomHeader/>
@@ -58,10 +44,10 @@ useEffect(() => {
               <div className="flex flex-col w-full items-center justify-center mt-20 mb-40">
                 <div className='duration-200 ease-out p-5 py-1 dark:border-slate-800 dark:bg-slate-800 border-black border-2 rounded-2xl'>
                   <h2 className='text-xl dark:text-white mb-1'>Último lançamento:</h2> 
-                  <iframe className='rounded-xl' width="1080" height="650" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                  <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/ZqD2OkNn8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                   <div className='flex w-full justify-between'>
-                    <h2 className='text-3xl dark:text-white my-2'>{videoTitle}</h2>
-                    <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>{videoDate}</p>
+                  <h2 className='text-3xl dark:text-white my-2'>Como animar igual OTOM - Terceira Temporada</h2>
+                  <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>18 de jul. de 2024</p>
                   </div>
                 </div>
               </div>
@@ -79,7 +65,7 @@ useEffect(() => {
                   <h2 className='text-xl dark:text-white mb-1'>Último lançamento:</h2> 
                   <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/ZqD2OkNn8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                   <div className='flex w-full justify-between'>
-                    <h2 className='text-3xl dark:text-white my-2'>OTOM 12: O Tombo</h2>
+                    <h2 className='text-3xl dark:text-white my-2'>Como animar igual OTOM - Terceira Temporada</h2>
                     <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>18 de jul. de 2024</p>
                   </div>
                 </div>

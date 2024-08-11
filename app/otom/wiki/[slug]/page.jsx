@@ -6,6 +6,8 @@ import dynamic from 'next/dynamic';
 import matter from 'gray-matter';
 import WikiHeader from '../wiki components/WikiHeader';
 import TableOfContents from '../wiki components/TableOfContents';
+import remarkSlug from 'remark-slug';
+import remarkAutolinkHeadings from 'remark-autolink-headings';
 
 const CONTENT_DIR = path.join(process.cwd(), 'app', 'Contents');
 
@@ -42,7 +44,11 @@ export default async function WikiPage({ params }) {
 
   const source = fs.readFileSync(filePath, 'utf8');
   const { content, data: data } = matter(source);
-  const mdxSource = await serialize(content);
+  const mdxSource = await serialize(content, {
+    mdxOptions: {
+      remarkPlugins: [remarkSlug, remarkAutolinkHeadings],
+    },
+  });
 
   return (
     <>

@@ -8,7 +8,6 @@ const TableOfContents = () => {
   const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
-    // Ensure the effect runs after the component mounts
     const handleUpdateHeadings = () => {
       const headingElements = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'));
 
@@ -21,17 +20,8 @@ const TableOfContents = () => {
       setHeadings(extractedHeadings);
     };
 
-    // Run the function once when the component mounts
     handleUpdateHeadings();
-
-    // Optional: You can attach this function to a resize or other events if necessary
-    window.addEventListener('resize', handleUpdateHeadings);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener('resize', handleUpdateHeadings);
-    };
-  }, []); // Empty dependency array ensures this effect runs once on mount
+  }, []);
 
   const toggleListVisibility = () => {
     setIsHidden(!isHidden);
