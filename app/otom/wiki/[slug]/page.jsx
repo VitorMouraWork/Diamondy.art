@@ -7,7 +7,7 @@ import matter from 'gray-matter';
 import WikiHeader from '../wiki components/WikiHeader';
 import TableOfContents from '../wiki components/TableOfContents';
 
-const CONTENT_DIR = path.join(process.cwd(), 'app', 'otom', 'wiki', 'Contents');
+const CONTENT_DIR = path.join(process.cwd(), 'app', 'Contents');
 
 // Dynamic import for the client component
 const MDXContent = dynamic(() => import('./MDXContent'));

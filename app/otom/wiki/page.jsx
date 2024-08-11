@@ -3,8 +3,10 @@
 import '../otom.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import Front from "./Contents/wikiHome.mdx";
 import WikiHeader from './wiki components/WikiHeader';
+import TableOfContents from './wiki components/TableOfContents';
+import FunFacts from './wiki components/FunFacts';
+import AboutContent from './wiki components/AboutContent.jsx';
 
 const OtomWiki = () => {
   return (
@@ -28,7 +30,32 @@ const OtomWiki = () => {
               </div>
           </div>
           <div className='inter font-inter prose prose-slate dark:prose-invert duration-200 flex flex-col ease-out bg-white dark:bg-slate-900 drop-shadow-md p-10 rounded-3xl w-[80rem] max-w-[80rem] space-y-5'>
-            <Front/>
+            <h1>Página inicial</h1>
+            <p>Bem-vindo à Wiki Oficial de OTOM! Este é o seu guia definitivo para tudo relacionado a Over the Object Madness! Aqui, você encontrará informações detalhadas sobre os personagens, episódios, locais e muito mais.</p>
+            <Image src="/assets/icons/otom/otoms.png" width={5600} height={700} className="w-full"/>
+            <hr></hr>
+            <TableOfContents/>
+
+            <h2>Episódio mais recente:</h2>
+            <AboutContent 
+                image="/assets/icons/otom/wiki media/Otom-13-thumbnail real.png" 
+                link="https://www.youtube.com/watch?v=1iNW3b7ioxI"
+                title="OTOM 13: Ora seu!" 
+                text="Ora seu! é o décimo terceiro episódio de otom. ele lançou no dia 10 de Maio de 2024 no YouTube. O episódio começa com Grandão e Estagiário chegando em um estabelecimento desconhecido, com o objetivo de discutir negócios. depois é revelado que os personagens do estabelecimento são os debuters do episódio 6." 
+            />
+            <hr></hr>
+
+            <h2>Vídeo mais recente:</h2>
+            <AboutContent 
+                image="/assets/icons/otom/wiki media/s3tutorialthumbnail.png" 
+                link="https://www.youtube.com/watch?v=ZqD2OkNn8K8"
+                title="Como animar igual OTOM - Terceira Temporada" 
+                text="Este vídeo lançou no dia 18 de Julho de 2024 no YouTube. Este vídeo é um guia de como animar no estilo da terceira temporada de otom. ele foi feito para recrutar possíveis animadores para contribuir com a animação da terceira temporada." 
+            />
+            
+            <p>Se você é novo no universo de OTOM ou um fã de longa data, esta wiki é o lugar perfeito para descobrir curiosidades, explorar teorias e ficar por dentro de tudo o que acontece na série.</p>
+            <hr></hr>
+            <FunFacts count={5}/>
             <p className='opacity-25 text-xs translate-y-5'>O conteúdo da wiki está disponível sob CC-BY-SA. © Over the Object Madness 2024</p>
           </div>
         </div>

@@ -19,6 +19,7 @@ const nextConfig = {
     experimental: {
       serverComponentsExternalPackages: ["mongoose"],
     },
+    transpilePackages: ["next-mdx-remote"],
     redirects: async() => {
       return [
         {

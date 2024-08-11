@@ -1,5 +1,4 @@
 "use client";
-
 import './otom.css'
 import Link from 'next/link';
 import Image from 'next/image';
@@ -8,16 +7,11 @@ import OtomNews from './otom components/OtomNews';
 import Characters from './otom components/Characters';
 import OtomHeader from './otom components/OtomHeader';
 import { useState, useEffect } from 'react';
-
-
 const Otom = () => {
-
 // get latest video
-
 const [video, setVideo] = useState();
 const [videoTitle, setVideoTitle] = useState([]);
 const [videoDate, setVideoDate] = useState([]);
-
 useEffect(() => {
     try {
         const data = fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3DUCJNKXLfv5M06iJAgMA9LHZg').then(response => response.json());
@@ -27,15 +21,12 @@ useEffect(() => {
     } catch (error) {
         console.log(error);
     }
-    
+ 
 });
-
-
   return (
     <>
     <OtomHeader/>
     <BlueBlur/>
-
     {/* personagens */}
     <div className='absolute w-full flex flex-col items-center z-10'>
       <div className='-ml-[80rem]'>
@@ -52,20 +43,17 @@ useEffect(() => {
         <div className='ml-[28rem] mt-[12rem]'><Characters/></div>
       </div>
     </div>
-
       <section className="w-full h-full z-10 mt-32 flex flex-col items-center justify-center">
-        
+     
         <OtomNews/>
-        
+     
         {/* parte 1 */}
           <div className='grassBg w-full px-[20%] mt-36 block dark:hidden'>             
               <div className='flex z-10 w-full justify-center flex-col items-center -translate-y-20 z-40 flex'>
                 <Image className={"mx-3 mb-14"} src="/assets/icons/otom/OTOM.svg" width={420} height={420}/>
                 <h1 className='-translate-y-16 text-dyblack dark:text-white text-2xl'>Over the Object Madness</h1>
-
                 <a target="_blank" rel="noopener noreferrer"  href="https://www.youtube.com/watch?v=1iNW3b7ioxI&pp=ygUEb3RvbQ%3D%3D" className='group dark:bg-slate-800 dark:text-white flex justify-center duration-200 items-center mt-10 border-2 border-black rounded-full px-5 hover:px-6 py-3 z-40'> Assista o último episódio <Image src="/assets/icons/arrow.svg" width={15} height={15} className='ml-3 ease-out duration-200 dark:invert group-hover:translate-x-1 group-hover:-translate-y-1'/></a>
               </div>
-
               {/* parte 2 */}
               <div className="flex flex-col w-full items-center justify-center mt-20 mb-40">
                 <div className='duration-200 ease-out p-5 py-1 dark:border-slate-800 dark:bg-slate-800 border-black border-2 rounded-2xl'>
@@ -76,19 +64,15 @@ useEffect(() => {
                     <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>{videoDate}</p>
                   </div>
                 </div>
-
               </div>
           </div>
               {/* parte 2 dark*/}
           <div className='grassBgDark w-full px-[20%] mt-36 hidden dark:block'>
-
               <div className='flex z-10 w-full justify-center flex-col items-center -translate-y-20 flex'>
                 <Image className={"mx-3 mb-14"} src="/assets/icons/otom/OTOM.svg" width={420} height={420}/>
                 <h1 className='-translate-y-16 text-dyblack dark:text-white text-2xl'>Over the Object Madness</h1>
-
                 <Link href="https://www.youtube.com/watch?v=1iNW3b7ioxI&pp=ygUEb3RvbQ%3D%3D" className='dark:bg-slate-800 dark:text-white flex justify-center duration-75 items-center mt-10 border-2 border-black rounded-full px-5 hover:px-6 py-3'> Assista o último episódio <Image src="/assets/icons/arrow.svg" width={15} height={15} className='ml-3 dark:invert'/></Link>
               </div>
-
               {/* parte 2 */}
               <div className="flex flex-col w-full items-center justify-center mt-20 mb-40">
                 <div className='duration-200 ease-out p-5 py-1 dark:border-slate-800 dark:bg-slate-800 border-black border-2 rounded-2xl'>
@@ -101,7 +85,6 @@ useEffect(() => {
                 </div>
               </div>
           </div>
-
           {/* personagens */}
           <div className='absolute w-full flex flex-col items-center z-10 '>
                   <div className='ml-[30rem] mb-[75rem]'>
@@ -113,7 +96,6 @@ useEffect(() => {
                     <Image src="/assets/icons/otom/Grass.svg" width={1200} height={1200} className='absolute pointer-events-none -ml-[100rem] z-0 mt-[0rem]'/>
                   </div>
                 </div>
-
                 <div className='absolute w-full flex flex-col items-center z-10 '>
                   <div className='ml-[35rem] -mb-[23rem]'>
                     <div className='-ml-[36rem] mt-[25rem]'><Characters/></div>
@@ -122,10 +104,9 @@ useEffect(() => {
                     <div className='ml-[30rem] mt-[25rem]'><Characters/></div>
                     <div className='ml-[0rem] mt-[25rem]'><Characters/></div>
                     <div className='ml-[20rem] mt-[25rem]'><Characters/></div>
-
                   </div>
                 </div>
-            
+         
           {/* parte 3 */}
           <div className='px-[20%] mt-20'>
             <h3 className='text-3xl dark:text-white text-center'>O que é OTOM?</h3>
@@ -137,7 +118,6 @@ useEffect(() => {
                   <h4 className='text-xl dark:text-white'>Inscritos</h4>
                 </div>
               </div>
-
               <div className='flex justify-center space-x-20 items-center'>
                 <p className='w-3/4 dark:text-white'>A comunidade interage diretamente com o resultado da série através ao sistema de eliminação. No final de cada episódio, os telespectadores podem votar em um dos perdedores para ser eliminado da série.</p> 
                 <div className='duration-200 ease-out flex border-b-[10px] dark:bg-slate-800 dark:border-slate-700 flex-col items-center justify-center bg-white border-4 border-black rounded-xl p-5 px-5 w-96'>
@@ -145,18 +125,15 @@ useEffect(() => {
                   <h4 className='text-xl dark:text-white'>visualizações</h4>
                 </div>
               </div>
-
               <div className='flex justify-center space-x-20 items-center'>
                 <p className='w-3/4 dark:text-white'>Criada em 2016, OTOM continua a cativar seu público com curtas divertidas, personagens engraçados e claro, participação ativa dos fãs.</p> 
                 <div className='duration-200 ease-out flex border-b-[10px] dark:bg-slate-800 dark:border-slate-700 flex-col items-center justify-center bg-white border-4 border-black rounded-xl p-5 px-5 w-96'>
                   <h3 className='text-4xl dark:text-white font-bold'>1616</h3>
                   <h4 className='text-xl dark:text-white'>Votos</h4>
-
                 </div>
               </div>
             </div>
           </div>
-
         {/* parte 4 */}
         <div className='flex flex-col justify-center items-center w-full py-40 space-y-5 bgblur mb-20'>
           {/* assets */}
@@ -171,7 +148,6 @@ useEffect(() => {
             <Image className="block dark:hidden" src="/assets/icons/otom/diamond select.png" width={185} height={160}/>
             <Image className="hidden dark:block" src="/assets/icons/otom/diamond select dark.png" width={185} height={160}/>
           </div>
-
           <div className='flex max-w-prose space-x-0'>
             {/* recomendar personagem */}
             <a target="_blank" rel="noopener noreferrer"  className="duration-200 ease-out bg-white dark:bg-slate-800 drop-shadow-md p-5 rounded-3xl space-y-5 -ml-9 w-3/4" href="https://forms.gle/GreqFwivkC2wvd2a8">
@@ -179,13 +155,11 @@ useEffect(() => {
                 <form className='w-full space-y-1 '>
                   <p className='dark:text-white'>Seu nome:</p>
                   <p className='duration-200 ease-out w-full border-2 border-slate-200 text-gray-300 dark:text-slate-600 dark:border-slate-600 rounded-md py-2 px-3'>Sérgio Sergipe</p>
-
                   <p className='dark:text-white'>Seu Objeto:</p>
                   <p className='duration-200 ease-out w-full text-gray-300 dark:text-slate-600 border-2 border-slate-200 dark:border-slate-600 rounded-md py-2 px-3'>máquina de lavar</p>
                   <button className='w-full border-2 border-black rounded-full py-1 px-2 flex w-min items-center dark:text-white dark:border-white'>Enviar <Image src='/assets/icons/arrow.svg' width={12} height={12} className='mx-2 mr-4 dark:invert'/></button>
                 </form>
             </a>
-
             {/* discord */}
             <div className='duration-200 ease-out bg-white dark:bg-slate-800 drop-shadow-md ml-5 p-5 rounded-3xl w-3/4 space-y-5 flex -ml-9 translate-x-10 flex-col justify-center items-center'>
               <h3 className='text-2xl font-bold text-center	dark:text-white'>Faça parte da nossa Comunidade</h3>
@@ -202,7 +176,6 @@ useEffect(() => {
           <div className='ml-[12rem] -mb-[5rem]'><Characters/></div>
           </div>
         </div>
-
         {/* redes sociais */}
         <div className='absolute w-full flex flex-col items-center -mb-[90rem] z-10'>
                   <div className='ml-[35rem] -mb-[312rem]'>
@@ -211,7 +184,6 @@ useEffect(() => {
                     <div className='ml-[42rem] mt-[20rem]'><Characters/></div>
                     <div className='ml-[30rem] mt-[32rem]'><Characters/></div>
                     <div className='ml-[40rem] mt-[37rem]'><Characters/></div>
-
                     <Image src="/assets/icons/otom/Grass.svg" width={1200} height={1200} className='absolute pointer-events-none ml-[30rem] z-0 mt-[0rem] -z-10'/>
                     <Image src="/assets/icons/otom/Grass.svg" width={1200} height={1200} className='absolute pointer-events-none -ml-[100rem] z-0 mt-[0rem] z-0'/>
                   </div>
@@ -220,16 +192,13 @@ useEffect(() => {
           <a target="_blank" rel="noopener noreferrer"  href="https://www.youtube.com/@OTOM2">
             <p className='text-xl flex w-max rounded-full bg-white dark:bg-slate-800 dark:text-white text-dyblack p-2 px-5 dark:hover:text-dyblue hover:text-dyblue duration-200 ease-out border-2 border-black'>  <Image src="/assets/icons/otom/youtube.svg" className='mr-3' width={20} height={20}/>@OTOM2</p>
           </a>
-
           <a target="_blank" rel="noopener noreferrer"  href="https://x.com/Object_Madness">
             <p className='text-xl flex w-max rounded-full bg-white dark:bg-slate-800 dark:text-white text-dyblack p-2 px-5 dark:hover:text-dyblue hover:text-dyblue duration-200 ease-out border-2 border-black'>  <Image src="/assets/icons/otom/twitter.svg" className='mr-3' width={20} height={20}/>@Object_Madness</p>
           </a>
-
           <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@overtheobjectmadness?lang=pt-BR">
             <p className='text-xl flex w-max rounded-full bg-white dark:bg-slate-800 dark:text-white text-dyblack p-2 px-5 dark:hover:text-dyblue hover:text-dyblue duration-200 ease-out border-2 border-black'>  <Image src="/assets/icons/otom/tiktok.svg" className='mr-3' width={20} height={20}/>@overtheobjectmadness</p>
           </a>
         </div>
-
         {/* rodapé */}
         <div className='w-full bg-dyblue dark:bg-slate-800 bluegrid rounded-t-3xl h-full bottom-0 px-[25%] py-8'>
           <div className='flex justify-between'>
@@ -238,11 +207,9 @@ useEffect(() => {
               <Link href="https://www.youtube.com/@OTOM2">
                 <Image src="/assets/icons/otom/youtube.svg" className='bg-white rounded-full p-1 w-8 aspect-square' width={40} height={40}/>
               </Link>
-
               <Link href="https://x.com/Object_Madness">
                 <Image src="/assets/icons/otom/twitter.svg" className='bg-white rounded-full p-1 w-8 aspect-square' width={40} height={40}/>
               </Link>
-
               <Link href="https://www.tiktok.com/@overtheobjectmadness?lang=pt-BR">
                 <Image src="/assets/icons/otom/tiktok.svg" className='bg-white rounded-full p-1 w-8 aspect-square' width={30} height={30}/>
               </Link>
@@ -267,11 +234,9 @@ useEffect(() => {
           </div>
           <p className='text-white text-xs mt-5'>2024 © Over The Object Madness. All rights reserved.</p>
         </div>
-        
-
+     
       </section>
     </>
   )
 }
-
 export default Otom;
