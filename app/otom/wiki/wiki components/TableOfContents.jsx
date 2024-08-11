@@ -42,8 +42,13 @@ const TableOfContents = () => {
       <hr className={isHidden ? 'hidden my-0 mx-0' : 'my-0 mx-0'}></hr>
       <ol className={isHidden ? 'hidden flex flex-col' : 'my-0 ml-0 flex flex-col'}>
         {headings.map((heading, index) => (
-          <li key={index} className={`my-0 ml-${heading.level * 2}`}>
-            <a className="font-thin my-0 no-underline hover:underline" href={`#${heading.id}`}>{heading.title}</a>
+          <li
+            key={index}
+            className={`my-0 ${heading.level > 2 ? 'list-disc ml-8' : `list-decimal ml-${heading.level * 4}`}`}
+          >
+            <a className="font-thin my-0 no-underline hover:underline" href={`#${heading.id}`}>
+              {heading.title}
+            </a>
           </li>
         ))}
       </ol>
