@@ -31,7 +31,7 @@ const OtomBlog = async () => {
       <OtomHeader />
       <section className="w-full h-full z-10 flex flex-col items-center justify-center">     
         <div className='flex flex-col justify-center items-center w-full py-40 space-y-3 bgblur'>
-          <div className='duration-200 flex flex-col ease-out bg-white dark:bg-slate-900 drop-shadow-md p-5 rounded-3xl w-[80rem] max-w-[80rem] space-y-5'>
+          <div className='duration-200 flex flex-col ease-out bg-white dark:bg-slate-900 drop-shadow-md p-5 rounded-3xl w-[80rem] max-w-[80rem] max-sm:w-full space-y-5'>
               <Image src="/assets/icons/otom/blog.svg" width={250} height={250}/>
             <hr className='dark:opacity-20'></hr>
             <div>

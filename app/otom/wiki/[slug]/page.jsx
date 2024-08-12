@@ -55,8 +55,8 @@ export default async function WikiPage({ params }) {
     <>
       <WikiHeader />
       <section className="w-full order-0 h-full z-10 flex flex-col items-center justify-center">
-        <div className="flex flex-col justify-center items-center w-full py-40 space-y-3 bgblur">
-          <div className="inter font-inter prose prose-slate dark:prose-invert duration-200 flex flex-col ease-out bg-white dark:bg-slate-900 drop-shadow-md p-10 rounded-3xl w-[80rem] max-w-[80rem] space-y-5">
+        <div className="flex flex-col justify-center items-center w-full max-sm:my-10 md:py-40 space-y-3 bgblur">
+          <div className="inter font-inter prose prose-slate dark:prose-invert duration-200 flex flex-col ease-out bg-white dark:bg-slate-900 drop-shadow-md p-10 rounded-3xl max-sm:w-full md:w-[80rem] md:max-w-[80rem] space-y-5">
             <h1 className='mb-0'>{data.title}</h1>
             <p>{data.author}</p>
             <hr></hr>

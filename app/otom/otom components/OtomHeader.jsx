@@ -2,7 +2,6 @@
 
 import '../otom.css'
 import Link from "next/link";
-import Image from "next/image";
 
 const OtomHeader = () => {
   return (
@@ -18,10 +17,10 @@ const OtomHeader = () => {
       <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue mx-14">Blog</p>
     </Link>
     <Link href={'https://drive.google.com/drive/u/1/folders/1jPEaSmrXxMvIrjGyZRcV9OH_DX0ovaN8'}>
-      <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue mx-14">Assets</p>
+      <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue mx-14 hidden sm:block">Assets</p>
     </Link>
     <Link href={'/games'}>
-      <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue mx-14 before:content-['Jogos'] hover:before:content-['Em_Breve!']"></p>
+      <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue mx-14 hidden sm:block">Jogos</p>
     </Link>
   </nav>
 </div>

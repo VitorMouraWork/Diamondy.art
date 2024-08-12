@@ -17,7 +17,7 @@ const Darkmode = () => {
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
   return (
-    <div className="flex justify-end items-end fixed z-20 w-full top-0 p-5">
+    <div className="flex justify-end items-end fixed z-20 w-full top-0 max-sm:hidden p-5">
         {currentTheme === 'dark' ? (
             <Image onClick={() => setTheme('light')} className='self-center' role="button" src="/assets/icons/otom/lightmode.svg" alt="Light Mode" width={20} height={20}/>
         ) : (

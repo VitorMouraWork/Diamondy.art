@@ -60,7 +60,7 @@ const Characters = () => {
 
   return (
     character && (
-      <Image src={character} width={252} height={552} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/>
+      <Image src={character} width={252} height={552} className='sm:aspect-auto sm:max-w-52 sm:max-h-52 sm:absolute z-10 gelatine max-sm:hidden'/>
     )
   );
 };
