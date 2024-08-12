@@ -206,10 +206,10 @@ const Otom = () => {
               <p className="text-white transition duration-200 ease-out logo mx-14">Home</p>
             </Link>
             <Link href={'/otom/wiki'}>
-              <p className="text-white transition duration-200 ease-out mx-14 before:content-['Wiki'] hover:before:content-['Em_Breve!']"></p>
+              <p className="text-white transition duration-200 ease-out mx-14">Wiki</p>
             </Link>
             <Link href={'/otom/blog'}>
-              <p className="text-white transition duration-200 ease-out mx-14 before:content-['Blog'] hover:before:content-['Em_Breve!']"></p>
+              <p className="text-white transition duration-200 ease-out mx-14">Blog</p>
             </Link>
             <Link href={'https://drive.google.com/drive/u/1/folders/1jPEaSmrXxMvIrjGyZRcV9OH_DX0ovaN8'}>
               <p className="text-white transition duration-200 ease-out mx-14">Assets</p>

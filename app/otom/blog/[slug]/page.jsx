@@ -4,13 +4,13 @@ import { notFound } from 'next/navigation';
 import { serialize } from 'next-mdx-remote/serialize';
 import dynamic from 'next/dynamic';
 import matter from 'gray-matter';
-import WikiHeader from '../wiki components/WikiHeader';
-import TableOfContents from '../wiki components/TableOfContents';
 import remarkSlug from 'remark-slug';
 import remarkAutolinkHeadings from 'remark-autolink-headings';
 import '../../otom.css';
 
-const CONTENT_DIR = path.join(process.cwd(), 'app', 'Contents');
+import OtomHeader from '../../otom components/OtomHeader';
+
+const CONTENT_DIR = path.join(process.cwd(), 'app', 'Contents', 'Blog');
 
 // Dynamic import for the client component
 const MDXContent = dynamic(() => import('./MDXContent'));
@@ -32,10 +32,13 @@ export async function generateMetadata({ params }) {
   const { data } = matter(content);
   return {
     title: data.title || params.slug,
+    date: data.date || params.slug,
+    image: data.image || params.slug,
   };
 }
 
-export default async function WikiPage({ params }) {
+export default async function OtomBlog({ params }) {
+
   const { slug } = params;
   const filePath = path.join(CONTENT_DIR, `${slug}.mdx`);
 
@@ -53,19 +56,23 @@ export default async function WikiPage({ params }) {
 
   return (
     <>
-      <WikiHeader />
-      <section className="w-full order-0 h-full z-10 flex flex-col items-center justify-center">
-        <div className="flex flex-col justify-center items-center w-full py-40 space-y-3 bgblur">
+        <OtomHeader/>
+
+      <section className="w-full h-full z-10 flex flex-col items-center justify-center">     
+        <div className='flex flex-col justify-center items-center w-full py-40 space-y-3 bgblur'>
           <div className="inter font-inter prose prose-slate dark:prose-invert duration-200 flex flex-col ease-out bg-white dark:bg-slate-900 drop-shadow-md p-10 rounded-3xl w-[80rem] max-w-[80rem] space-y-5">
-            <h1 className='mb-0'>{data.title}</h1>
-            <p>{data.author}</p>
+          <h1 className='mb-0'>{data.title}</h1>
+          <img src={data.image} className='w-full h-80 object-cover rounded-2xl' />
+            <div className='flex w-full justify-between items-center'>
+              <h3 className='my-0'>escrito por: <i>{data.author}</i></h3>
+              <p className='my-0'>{data.date}</p>
+            </div>            
             <hr></hr>
-            <TableOfContents />
             <MDXContent source={mdxSource} />
-            <p className='opacity-25 text-xs translate-y-5'>O conteúdo da wiki está disponível sob CC-BY-SA. © Over the Object Madness 2024</p>
+            <p className='opacity-25 text-xs translate-y-5'>© Over the Object Madness 2024</p>
           </div>
         </div>
       </section>
     </>
-  );
+  )
 }

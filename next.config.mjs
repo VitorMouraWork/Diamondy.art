@@ -13,7 +13,14 @@ const withMDX = nextMDX({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      unoptimized: true 
+      domains: ['prnt.sc',],
+      unoptimized: true,
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "**",
+        },
+      ],
     },
     pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
     experimental: {
