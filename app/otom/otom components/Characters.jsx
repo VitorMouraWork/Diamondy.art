@@ -50,13 +50,17 @@ const getRandomCharacter = () => {
   return character;
 };
 
-const Characters = () => {
+const Characters = ({ CustomChar }) => {
   const [character, setCharacter] = useState(null);
 
   useEffect(() => {
-    const randomCharacter = getRandomCharacter();
-    setCharacter(randomCharacter);
-  }, []);
+    if (CustomChar) {
+      setCharacter(CustomChar);
+    } else {
+      const randomCharacter = getRandomCharacter();
+      setCharacter(randomCharacter);
+    }
+  }, [CustomChar]);
 
   return (
     character && (
@@ -66,6 +70,3 @@ const Characters = () => {
 };
 
 export default Characters;
-
-
-{/* <img src={character} className='aspect-auto max-w-52 max-h-52 absolute z-10 gelatine'/> */}

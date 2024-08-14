@@ -8,7 +8,7 @@ const AboutContent = ({image, link, title, text}) => {
         <div className='w-full space-x-10 items-start mt-0 flex h-max-fit max-sm:flex max-sm:flex-col'> 
                 <Image href={link} className='h-full max-sm:w-full rounded-xl aspect-video' src={image} width={320} height={320}/>
             <div>
-                <Link href={link}><p className="text-2xl">{title}</p></Link>
+                <Link href={link}><p className="text-2xl hover:opacity-60 ease-out duration-100">{title}</p></Link>
                 <p>{text}</p>
             </div>
         </div>

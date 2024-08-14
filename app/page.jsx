@@ -45,7 +45,6 @@ const Home = () => {
               <li>animator</li>
               <li>concept artist</li>
               <li>game developer</li>
-              <li>enviroment artist</li>
               <li>writer</li>
             </ul>
           </div>
@@ -87,14 +86,14 @@ const Home = () => {
               className='dyblue-filter'
             />
           </Link>
-          <Link href={"https://www.linkedin.com/in/vitor-moura-140237232/"} className='mx-4'>
+          {/* <Link href={"https://www.linkedin.com/in/vitor-moura-140237232/"} className='mx-4'>
             <Image 
               src={"/assets/icons/linkedin.svg"}
               width={20}
               height={20}
               className='dyblue-filter'
             />
-          </Link>
+          </Link> */}
         </div>
       </div>
       </section>
