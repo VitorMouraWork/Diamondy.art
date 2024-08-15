@@ -12,7 +12,7 @@ const WikiHeader = () => {
       <Link href={'/otom/wiki/'}>
         <p className="max-sm:hidden dark:text-white otomtxt text-2xl font-bold duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue logo">OTOM WIKI</p>
       </Link>
-      <Link href={'/otom/wiki/'}>
+      <Link href={'/otom/wiki/conteudo'}>
         <p className="dark:text-white duration-200 ease-out hover:text-dyblue dark:hover:text-dyblue ">Conteúdo da Wiki</p>
       </Link>
       <Link href={'/otom/wiki/personagens'}>
