@@ -37,8 +37,8 @@ const Header = () => {
           </div>
         )}
       </div>
-      <Link href={'/assets/files/Resumé.pdf'} passHref legacyBehavior>
-        <a download className="transition duration-200 ease-out hover:text-dyblue mx-14">resumé</a>
+      <Link href={'mailto:vitormourawork@gmail.com'} passHref legacyBehavior>
+        <a download className="transition duration-200 ease-out hover:text-dyblue mx-14">contact</a>
       </Link>
     </nav>
   );

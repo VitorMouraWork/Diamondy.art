@@ -46,7 +46,7 @@ const WikiContent = async () => {
       <section className="w-full h-full z-10 flex flex-col items-center justify-center">     
         <div className='flex flex-col justify-center items-center w-full py-40 space-y-3 bgblur'>
           <div className='duration-200 flex flex-col ease-out bg-white dark:bg-slate-900 drop-shadow-md p-5 rounded-3xl w-[80rem] max-w-[80rem] max-sm:w-full space-y-5'>
-            <h1 className='text-3xl'>Conteúdo da Wiki</h1>
+            <h1 className='text-3xl text-dyblack dark:text-white'>Conteúdo da Wiki</h1>
             <p>Nesta página estão listadas todas as páginas da wiki de OTOM em ordem alfabética.</p>
             <div>
               {/* Loop through grouped posts and display them */}

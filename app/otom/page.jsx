@@ -53,14 +53,14 @@ const Otom = () => {
               </div>
           </div>
               {/* parte 2 dark*/}
-          <div className='grassBgDark w-full px-[20%] mt-36 hidden dark:block'>
+          <div className=' grassBgDark w-full px-[20%] mt-36 hidden dark:block'>
               <div className='flex z-10 w-full justify-center flex-col items-center -translate-y-20 flex'>
                 <Image className={"mx-3 mb-14"} src="/assets/icons/otom/OTOM.svg" width={420} height={420}/>
                 <h1 className='-translate-y-16 text-dyblack dark:text-white text-2xl'>Over the Object Madness</h1>
                 <Link href="https://www.youtube.com/watch?v=1iNW3b7ioxI&pp=ygUEb3RvbQ%3D%3D" className='dark:bg-slate-800 dark:text-white flex justify-center duration-75 items-center mt-10 border-2 border-black rounded-full px-5 hover:px-6 py-3'> Assista o último episódio <Image src="/assets/icons/arrow.svg" width={15} height={15} className='ml-3 dark:invert'/></Link>
               </div>
               {/* parte 2 */}
-              <div className="flex flex-col w-full items-center justify-center mt-20 mb-40">
+              <div className="max-sm:hidden flex flex-col w-full items-center justify-center mt-20 mb-40">
                 <div className='duration-200 ease-out p-5 py-1 dark:border-slate-800 dark:bg-slate-800 border-black border-2 rounded-2xl'>
                   <h2 className='text-xl dark:text-white mb-1'>Último lançamento:</h2> 
                   <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/ZqD2OkNn8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -215,7 +215,7 @@ const Otom = () => {
               <p className="text-white transition duration-200 ease-out mx-14">Assets</p>
             </Link>
             <Link href={'/otom/jogos'}>
-              <p className="text-white transition duration-200 ease-out mx-14 before:content-['Jogos'] hover:before:content-['Em_Breve!']"></p>
+              <p className="text-white transition duration-200 ease-out mx-14">Jogos</p>
             </Link>
           </div>
           <p className='text-white text-xs mt-5'>2024 © Over The Object Madness. All rights reserved.</p>
