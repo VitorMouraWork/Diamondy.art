@@ -150,7 +150,7 @@ const Otom = () => {
             <div className='duration-200 ease-out bg-white dark:bg-slate-800 drop-shadow-md md:ml-5 p-5 rounded-3xl max-sm:w-96 md:w-3/4 space-y-5 flex md:-ml-9 md:translate-x-10 flex-col justify-center items-center'>
               <h3 className='text-2xl font-bold text-center	dark:text-white'>Faça parte da nossa Comunidade</h3>
               <p className='text-center dark:text-white'>Participe de eventos, Converse com outros fans e assista à livestreams da produção de OTOM.</p>
-              <a target="_blank" rel="noopener noreferrer"  href="https://discord.gg/otom">
+              <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/cGzBFAYRr6">
               <p className='flex w-fit rounded-full bg-[#5865F2] text-white p-2 px-5 hover:px-7 duration-200 ease-out border-2 dark:border-white border-black'>  <Image src="/assets/icons/otom/discord.svg" className='mr-3' width={20} height={20}/>discord.gg/otom</p>
               </a>
             </div>
