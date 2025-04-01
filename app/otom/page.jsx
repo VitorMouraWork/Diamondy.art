@@ -44,10 +44,10 @@ const Otom = () => {
               <div className="max-sm:hidden flex flex-col w-full items-center justify-center mt-20 mb-40">
                 <div className='duration-200 ease-out p-5 py-1 dark:border-slate-800 dark:bg-slate-800 border-black border-2 rounded-2xl'>
                   <h2 className='text-xl dark:text-white mb-1'>Último lançamento:</h2> 
-                  <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/ZqD2OkNn8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                  <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/Enep4CGbQEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                   <div className='flex w-full justify-between'>
-                  <h2 className='text-3xl dark:text-white my-2'>Como animar igual OTOM - Terceira Temporada</h2>
-                  <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>18 de jul. de 2024</p>
+                  <h2 className='text-3xl dark:text-white my-2'>otom 13.0 + 1.0 you can (NOT) eliminate</h2>
+                  <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>01 de Abr. de 2025</p>
                   </div>
                 </div>
               </div>
@@ -63,10 +63,10 @@ const Otom = () => {
               <div className="max-sm:hidden flex flex-col w-full items-center justify-center mt-20 mb-40">
                 <div className='duration-200 ease-out p-5 py-1 dark:border-slate-800 dark:bg-slate-800 border-black border-2 rounded-2xl'>
                   <h2 className='text-xl dark:text-white mb-1'>Último lançamento:</h2> 
-                  <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/ZqD2OkNn8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                  <iframe className='rounded-xl' width="1080" height="650" src="https://www.youtube.com/embed/Enep4CGbQEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                   <div className='flex w-full justify-between'>
-                    <h2 className='text-3xl dark:text-white my-2'>Como animar igual OTOM - Terceira Temporada</h2>
-                    <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>18 de jul. de 2024</p>
+                    <h2 className='text-3xl dark:text-white my-2'>otom 13.0 + 1.0 you can (NOT) eliminate</h2>
+                    <p className='text-gray-300 dark:text-slate-500 text-xl mt-2'>01 de Abr. de 2025</p>
                   </div>
                 </div>
               </div>
@@ -100,14 +100,14 @@ const Otom = () => {
               <div className='flex max-sm:flex-col max-sm:space-y-5 max-sm:justify-center justify-center space-x-20 items-center'>
                 <p className='max-sm:text-center md:w-3/4 dark:text-white'><i>Over the Object Madness</i> é uma web série de animação onde objetos do cotidiano competem em um Reality Show pelo prêmio de um Hotel e um milhão de dólares.</p> 
                 <div className='max-sm:hidden duration-200 ease-out flex border-b-[10px] dark:bg-slate-800 dark:border-slate-700 flex-col items-center justify-center bg-white border-4 border-black rounded-xl p-5 md:px-5 w-96'>
-                  <h3 className='text-4xl dark:text-white font-bold'>3.702</h3>
+                  <h3 className='text-4xl dark:text-white font-bold'>5.704</h3>
                   <h4 className='text-xl dark:text-white'>Inscritos</h4>
                 </div>
               </div>
               <div className='flex max-sm:flex-col max-sm:space-y-5 max-sm:justify-center justify-center space-x-20 items-center'>
                 <p className='max-sm:text-center md:w-3/4 dark:text-white'>A comunidade interage diretamente com o resultado da série através ao sistema de eliminação. No final de cada episódio, os telespectadores podem votar em um dos perdedores para ser eliminado da série.</p> 
                 <div className='max-sm:hidden duration-200 ease-out flex border-b-[10px] dark:bg-slate-800 dark:border-slate-700 flex-col items-center justify-center bg-white border-4 border-black rounded-xl p-5 md:px-5 w-96'>
-                  <h3 className='text-4xl dark:text-white font-bold'>315.282</h3>
+                  <h3 className='text-4xl dark:text-white font-bold'>442,879</h3>
                   <h4 className='text-xl dark:text-white'>visualizações</h4>
                 </div>
               </div>

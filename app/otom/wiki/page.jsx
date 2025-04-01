@@ -47,10 +47,10 @@ const OtomWiki = () => {
 
             <h2>Vídeo mais recente:</h2>
             <AboutContent 
-                image="https://img.youtube.com/vi/ZqD2OkNn8K8/maxresdefault.jpg" 
-                link="https://www.youtube.com/watch?v=ZqD2OkNn8K8"
-                title="Como animar igual OTOM - Terceira Temporada" 
-                text="Este vídeo lançou no dia 18 de Julho de 2024 no YouTube. Este vídeo é um guia de como animar no estilo da terceira temporada de otom. ele foi feito para recrutar possíveis animadores para contribuir com a animação da terceira temporada." 
+                image="https://img.youtube.com/vi/Enep4CGbQEQ/maxresdefault.jpg" 
+                link="https://www.youtube.com/watch?v=Enep4CGbQEQ"
+                title="otom 13.0 + 1.0 you can (NOT) eliminate" 
+                text="Vídeo de primeiro de Abril de 2025. Este vídeo é uma curta dos personagens de otom em um bar. Esta curta foi 100% improvisada e animada um dia antes de sua publicação." 
             />
             
             <p>Se você é novo no universo de OTOM ou um fã de longa data, esta wiki é o lugar perfeito para descobrir curiosidades, explorar teorias e ficar por dentro de tudo o que acontece na série.</p>
