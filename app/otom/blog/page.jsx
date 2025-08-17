@@ -10,13 +10,13 @@ const CONTENT_DIR = path.join(process.cwd(), 'app', 'Contents', 'Blog');
 const OtomBlog = async () => {
   // Read all files from the Blog directory
   const files = fs.readdirSync(CONTENT_DIR);
-
+  
   // Map through the files and extract metadata using gray-matter
   const posts = files.map((file) => {
     const filePath = path.join(CONTENT_DIR, file);
     const source = fs.readFileSync(filePath, 'utf8');
     const { data } = matter(source);
-    
+   
     return {
       slug: file.replace(/\.mdx$/, ''),
       title: data.title || file,
@@ -24,12 +24,26 @@ const OtomBlog = async () => {
       date: data.date || 'No Date',
       image: data.image || '/assets/icons/otom/diamond select.png', // default image if not provided
     };
+  })
+  // Sort posts by date (most recent first)
+  .sort((a, b) => {
+    // Handle cases where date might be 'No Date' or invalid
+    if (a.date === 'No Date' && b.date === 'No Date') return 0;
+    if (a.date === 'No Date') return 1; // Put 'No Date' posts at the end
+    if (b.date === 'No Date') return -1;
+    
+    // Convert dates to Date objects for comparison
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    
+    // Sort in descending order (most recent first)
+    return dateB.getTime() - dateA.getTime();
   });
 
   return (
     <>
       <OtomHeader />
-      <section className="w-full h-full z-10 flex flex-col items-center justify-center">     
+      <section className="w-full h-full z-10 flex flex-col items-center justify-center">    
         <div className='flex flex-col justify-center items-center w-full py-40 space-y-3 bgblur'>
           <div className='duration-200 flex flex-col ease-out bg-white dark:bg-slate-900 drop-shadow-md p-5 rounded-3xl w-[80rem] max-w-[80rem] max-sm:w-full space-y-5'>
               <Image src="/assets/icons/otom/blog.svg" width={250} height={250}/>
@@ -42,7 +56,7 @@ const OtomBlog = async () => {
                   <div>
                     <h2 className='text-3xl dark:text-white font-bold'>{post.title}</h2>
                     <p className='font-light dark:text-white mt-3'>{post.date}</p>
-                    
+                   
                   </div>
                 </a>
               ))}

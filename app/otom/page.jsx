@@ -6,12 +6,14 @@ import BlueBlur from './otom components/blueblur';
 import OtomNews from './otom components/OtomNews';
 import Characters from './otom components/Characters';
 import OtomHeader from './otom components/OtomHeader';
+import Donation from './otom components/donation';
 
 const Otom = () => {
 
   return (
     <>
     <OtomHeader/>
+    <Donation/>
     <BlueBlur/>
     {/* personagens */}
     <div className='sm:absolute sm:w-full sm:flex sm:flex-col sm:items-center sm:z-10'>
