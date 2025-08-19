@@ -47,10 +47,10 @@ const OtomWiki = () => {
 
             <h2>Vídeo mais recente:</h2>
             <AboutContent 
-                image="https://img.youtube.com/vi/Enep4CGbQEQ/maxresdefault.jpg" 
-                link="https://www.youtube.com/watch?v=Enep4CGbQEQ"
-                title="otom 13.0 + 1.0 you can (NOT) eliminate" 
-                text="Vídeo de primeiro de Abril de 2025. Este vídeo é uma curta dos personagens de otom em um bar. Esta curta foi 100% improvisada e animada um dia antes de sua publicação." 
+                image="https://img.youtube.com/vi/QT6_S9P8mbo/maxresdefault.jpg" 
+                link="https://youtu.be/QT6_S9P8mbo"
+                title="ATUALIZAÇÃO de OTOM!" 
+                text="Anúncio do update do jogo do OTOM no roblox, junto com o anúncio do evento que ocorrerá no dia 24 de agosto." 
             />
             
             <p>Se você é novo no universo de OTOM ou um fã de longa data, esta wiki é o lugar perfeito para descobrir curiosidades, explorar teorias e ficar por dentro de tudo o que acontece na série.</p>
