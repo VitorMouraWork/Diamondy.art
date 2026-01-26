@@ -109,7 +109,7 @@ const Otom = () => {
               <div className='flex max-sm:flex-col max-sm:space-y-5 max-sm:justify-center justify-center space-x-20 items-center'>
                 <p className='max-sm:text-center md:w-3/4 dark:text-white'>A comunidade interage diretamente com o resultado da série através ao sistema de eliminação. No final de cada episódio, os telespectadores podem votar em um dos perdedores para ser eliminado da série.</p> 
                 <div className='max-sm:hidden duration-200 ease-out flex border-b-[10px] dark:bg-slate-800 dark:border-slate-700 flex-col items-center justify-center bg-white border-4 border-black rounded-xl p-5 md:px-5 w-96'>
-                  <h3 className='text-4xl dark:text-white font-bold'>588,462</h3>
+                  <h3 className='text-4xl dark:text-white font-bold'>589,462</h3>
                   <h4 className='text-xl dark:text-white'>visualizações</h4>
                 </div>
               </div>
