@@ -47,10 +47,10 @@ const OtomWiki = () => {
 
             <h2>Vídeo mais recente:</h2>
             <AboutContent 
-                image="https://img.youtube.com/vi/NdmkzbUttcY/maxresdefault.jpg" 
-                link="https://youtu.be/NdmkzbUttcY"
-                title="SHOW DE TALENTOS no OTOM!" 
-                text="Vídeo do evento de show de talentos do server do otom." 
+                image="https://img.youtube.com/vi/-gwWkQTveMY/maxresdefault.jpg" 
+                link="https://youtu.be/-gwWkQTveMY"
+                title="20 anos de OTOM" 
+                text="Especial comemorativo de 20 anos de OTOM. O vídeo conta a história, a trajetória e as inspirações por trás da série." 
             />
             
             <p>Se você é novo no universo de OTOM ou um fã de longa data, esta wiki é o lugar perfeito para descobrir curiosidades, explorar teorias e ficar por dentro de tudo o que acontece na série.</p>
