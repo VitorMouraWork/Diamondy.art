@@ -197,7 +197,7 @@ body{
   .awesomegrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--card_width));
-    grid-auto-rows: var(10px);
+    grid-auto-rows: 10px;
     justify-content: center;
   }
   

@@ -22,6 +22,8 @@ const nextConfig = {
         },
       ],
     },
+    turbopack: {
+    },
     pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
     experimental: {
       serverComponentsExternalPackages: ["mongoose"],
