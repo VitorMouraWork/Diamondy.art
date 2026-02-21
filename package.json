@@ -15,7 +15,7 @@
     "@types/mdx": "^2.0.13",
     "autoprefixer": "10.4.14",
     "gray-matter": "^4.0.3",
-    "next": "^14.2.5",
+    "next": "^16.1.6",
     "next-mdx-remote": "^5.0.0",
     "next-themes": "^0.3.0",
     "postcss": "^8.4.31",
